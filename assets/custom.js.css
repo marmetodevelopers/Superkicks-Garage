@@ -1,0 +1,16 @@
+/* Header sticky js */
+document.addEventListener('DOMContentLoaded', function() {
+  window.addEventListener('scroll', function() {
+    // Check if the user has scrolled, you can adjust the scroll position as needed
+    if (window.scrollY > 250) {
+      // Add the new classes to the specified selectors
+      document.querySelector('sticky-header header.header').classList.add('sticky__header');
+      setTimeout(()=>{
+        document.querySelector('sticky-header header.header').classList.add('new-class');
+      },100)
+    } else {
+      // Remove the new classes if not scrolled enough
+      document.querySelector('sticky-header header.header').classList.remove( 'sticky__header', 'new-class');
+    }
+  });
+});

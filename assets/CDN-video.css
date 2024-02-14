@@ -1,0 +1,8 @@
+.video-section__container video {
+  height: 600px;
+  width: 100%;
+  object-fit: cover;
+}
+.CDN-video section {
+  position: relative;
+}

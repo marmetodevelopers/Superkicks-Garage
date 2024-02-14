@@ -1,0 +1,218 @@
+{
+  "sections": {
+    "cdn_video_section_AYVAwQ": {
+      "type": "CDN-video-section",
+      "settings": {
+        "heading": "",
+        "heading_left": false,
+        "description": "",
+        "section_width": "full-width-row-full",
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_hosted": "shopify:\/\/files\/videos\/COMPRESSED 20 MB.mp4",
+        "video_autoplay": true,
+        "aspect_ratio": "3-4",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "video_AJWN7N": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "cover_image": "shopify:\/\/shop_images\/CAMPUS_00S.png",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=0sXqWwRPSCI",
+        "description": "",
+        "full_width": true,
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 12
+      }
+    },
+    "ff9454e7-3a63-4bf9-bcee-50e1a896e399": {
+      "type": "hp--collection-banner-collage",
+      "blocks": {
+        "right_block_QG47wc": {
+          "type": "right_block",
+          "settings": {
+            "collection_title": "",
+            "link": "",
+            "block_size": 100
+          }
+        },
+        "right_block_jd6rxY": {
+          "type": "right_block",
+          "settings": {
+            "collection_title": "",
+            "link": "",
+            "block_size": 100
+          }
+        },
+        "left_block_nx3DyR": {
+          "type": "left_block",
+          "settings": {
+            "collection_title": "",
+            "link": "",
+            "block_size": 100
+          }
+        }
+      },
+      "block_order": [
+        "right_block_QG47wc",
+        "right_block_jd6rxY",
+        "left_block_nx3DyR"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_full_width": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Footwear",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "footwear",
+        "products_to_show": 12,
+        "columns_desktop": 4,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "923a26c1-2d1f-4cf7-8bd4-550fcb70f3c6": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Apparel",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "apparel",
+        "products_to_show": 12,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "21dacb36-b5d7-4295-a402-ef7a20f60281": {
+      "type": "hp--collection-grid",
+      "blocks": {
+        "7668e66c-b061-4e8d-8e4e-f40bdafb240f": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/tote.png",
+            "title": "",
+            "paragraph": "",
+            "button": "",
+            "button_link": "shopify:\/\/collections\/apparel"
+          }
+        },
+        "f92bd345-36e5-451d-bdc6-62aa20f7ad7c": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1._1.png",
+            "title": "",
+            "paragraph": "",
+            "button": "",
+            "button_link": "shopify:\/\/collections\/accessories"
+          }
+        }
+      },
+      "block_order": [
+        "7668e66c-b061-4e8d-8e4e-f40bdafb240f",
+        "f92bd345-36e5-451d-bdc6-62aa20f7ad7c"
+      ],
+      "settings": {
+        "section_title": "",
+        "padding_top": 36,
+        "padding_bottom": 20
+      }
+    },
+    "31fb1df2-ddfa-446e-9a1e-20bea0039709": {
+      "type": "hp--stores-section",
+      "blocks": {
+        "e5f41197-51df-427e-8e49-df9b138ee7d2": {
+          "type": "store",
+          "settings": {
+            "title": "",
+            "button_link": "shopify:\/\/pages\/store"
+          }
+        },
+        "6069aaec-034c-43f8-8ead-4dc5558c7650": {
+          "type": "store",
+          "settings": {
+            "title": "",
+            "button_link": "shopify:\/\/pages\/store"
+          }
+        },
+        "d7828916-fb2e-4824-b30a-d3cad309f35f": {
+          "type": "store",
+          "settings": {
+            "title": "",
+            "button_link": "shopify:\/\/pages\/store"
+          }
+        },
+        "682dd444-6769-4277-994c-006211f3eaf6": {
+          "type": "store",
+          "settings": {
+            "title": "",
+            "button_link": "shopify:\/\/pages\/store"
+          }
+        }
+      },
+      "block_order": [
+        "e5f41197-51df-427e-8e49-df9b138ee7d2",
+        "6069aaec-034c-43f8-8ead-4dc5558c7650",
+        "d7828916-fb2e-4824-b30a-d3cad309f35f",
+        "682dd444-6769-4277-994c-006211f3eaf6"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_title": "Stores",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "cdn_video_section_AYVAwQ",
+    "video_AJWN7N",
+    "ff9454e7-3a63-4bf9-bcee-50e1a896e399",
+    "featured_collection",
+    "923a26c1-2d1f-4cf7-8bd4-550fcb70f3c6",
+    "21dacb36-b5d7-4295-a402-ef7a20f60281",
+    "31fb1df2-ddfa-446e-9a1e-20bea0039709"
+  ]
+}

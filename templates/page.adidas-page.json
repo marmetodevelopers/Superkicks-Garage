@@ -1,0 +1,65 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 16,
+        "padding_bottom": 0
+      }
+    },
+    "0f85201c-7082-47a3-9365-2b8860086710": {
+      "type": "rich-text",
+      "blocks": {
+        "d202e132-6cc8-48c1-9740-ed82eef63b69": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Returns & Exchange<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "template--16777411690747__0f85201c-7082-47a3-9365-2b8860086710-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>All sales at Superkicks, are final.<\/strong><br\/>Considering the uniqueness of our offering, exchange or returns may not be always possible. We can surely support if it’s a genuine size exchange or can provide a GIFT CARD\/credit note in case your size is not available.<\/p><p><strong>Please note that we do not provide support on discounted\/SALE items so make sure you order the correct size required by you.<\/strong><br\/>However, we do accept returns\/refunds if you receive an incorrect or defective item.<br\/><br\/><strong>Exchange or Returns:<\/strong><br\/><br\/>1) Within 7 days of receiving the product.<br\/><br\/>2) You can place your return or exchange request by <a href=\"https:\/\/www.superkicks.in\/apps\/return_prime\" title=\"https:\/\/www.superkicks.in\/apps\/return_prime\"><span style=\"text-decoration:underline\">clicking here<\/span><\/a> or by mailing us at care@superkicks.in<br\/><br\/>3) Item should be returned the way you received i.e. the brown carton along with the product box, tags intact, and the product should be unused.<br\/><br\/>4) You will receive Gift Card\/credit or exchange once we have received the product and is inspected by our team. Takes up to 4-5 days.<br\/><br\/>5) Refunds are ONLY processed based on fulfillment errors, such as incorrectly shipped, damaged, or missing items.<br\/><\/p><p><strong>Note: <\/strong> If there is any genuine problem which is not getting solved through our Return Centre then please do let us know by mailing us at care@superkicks.in, we will be happy to assist you. <\/p><p><br\/><strong>The below products are excluded from exchange and returns:<\/strong><br\/><br\/>1) Discounted\/Sale Items <\/p><p>2) Hype releases i.e. Air Jordan lows\/mids\/Highs, Dunks, or Exclusively Collab items.<\/p><p>3) Accessories excluding Retrosuperfuture.<\/p>"
+          }
+        },
+        "template--16777411690747__0f85201c-7082-47a3-9365-2b8860086710-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "Return Center",
+            "button_link": "https:\/\/www.superkicks.in\/apps\/return_prime",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
+        "7b399529-4d8e-401b-ae16-c8c17fb0730d": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Cancellation by SUPERKICKS:<\/h2><p>Please note that there may be certain orders that we are unable to accept and must cancel. We reserve the right, at our sole discretion, to refuse or cancel any order for any reason. Some situations that may result in your order being canceled include limitations on quantities available for purchase, inaccuracies or errors in Product or pricing information, or problems identified by our fraud avoidance department. We may also require additional verifications or information before accepting any order. We will contact you if all or any portion of your order is canceled or if additional information is required to accept your order. If your order is canceled after your card has been charged, the said amount will be reversed back into your Card Account.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "d202e132-6cc8-48c1-9740-ed82eef63b69",
+        "template--16777411690747__0f85201c-7082-47a3-9365-2b8860086710-text-1",
+        "template--16777411690747__0f85201c-7082-47a3-9365-2b8860086710-button-1",
+        "7b399529-4d8e-401b-ae16-c8c17fb0730d"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    }
+  },
+  "order": [
+    "main",
+    "0f85201c-7082-47a3-9365-2b8860086710"
+  ]
+}

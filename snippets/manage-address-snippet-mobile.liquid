@@ -1,0 +1,211 @@
+<script src="{{ 'input-box.js' | asset_url }}" defer="defer"></script>
+
+<div class="customer addresses" data-customer-addresses>
+  <div class="add_button_container">
+    <button class="add_button" id="add_button" type="button" aria-expanded="false" aria-controls="AddAddress">
+    {{ 'customer.addresses.add_new' | t }}
+    </button>
+  </div>
+  <ul role="list" class="adress_container" id="adress_container">
+    <div id="AddAddress">
+      {%- form 'customer_address', customer.new_address, aria-labelledBy: 'AddressNewHeading',  class: 'contact-Form' -%} 
+      <div class="cancel_button_container">
+        <button type="reset" id="cancel_btn__add">{% render 'cross-icon' %}</button>
+      </div>
+      <div class=" add_address_title">
+        <h2>Add Address</h2>
+      </div>
+      <div class="phone_add">
+        <label for="AddressPhoneNew">{{ 'customer.addresses.phone' | t }}</label>
+        <div class="country_code">+91</div>
+        <div class="field" id="field-large">
+          <input id="AddressPhoneNew" class="input-Maxlength remove-zero" type="number" name="address[phone]" value="{{ form.phone }}" autocomplete="tel" placeholder="{{ 'customer.addresses.phone' | t }}" required>
+        </div>
+        <div class="errorMessage">Please enter a valid phone number.</div>
+      </div>
+      <div class="address_add">
+        <label for="AddressAddress1New">{{ 'customer.addresses.address1' | t }}</label>
+        <div class="field" id="field-large">
+          <input type="text" id="AddressAddress1New" name="address[address1]" value="{{ form.address1 }}" autocomplete="address-line1" placeholder="{{ 'customer.addresses.address1' | t }}" required>
+        </div>
+        <label for="AddressAddress2New">{{ 'customer.addresses.address2' | t }}</label>
+        <div class="field">
+          <input type="text" id="AddressAddress2New" name="address[address2]" value="{{ form.address2 }}" autocomplete="address-line2" placeholder="{{ 'customer.addresses.address2' | t }}">
+        </div>
+      </div>
+      <div class="small-fields">
+        <div class="pincode_add field-small">
+          <label for="AddressZipNew">{{ 'customer.addresses.zip' | t }}</label>
+          <div class="field">
+            <input type="text" id="AddressZipNew" name="address[zip]" value="{{ form.zip }}" autocapitalize="characters" autocomplete="postal-code" placeholder="{{ 'customer.addresses.zip' | t }}" required>
+          </div>
+        </div>
+        <div class="address_add field-small">
+          <label for="AddressCityNew">{{ 'customer.addresses.city' | t }}</label>
+          <div class="field">
+            <input type="text" id="AddressCityNew" name="address[city]" value="{{ form.city }}" autocomplete="address-level2" placeholder="{{ 'customer.addresses.city' | t }}" required>
+          </div>
+        </div>
+      </div>
+      <div id="AddressProvinceContainerNew">
+        <label for="AddressProvinceNew">{{ 'customer.addresses.province' | t }}</label>
+        <div class="select">
+          <select id="AddressProvinceNew" name="address[province]" data-default="{{ form.province }}" autocomplete="address-level1" ></select>
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+            <use href="#icon-caret" />
+          </svg>
+        </div>
+      </div>
+      <div class="select_country">
+        <label for="AddressCountryNew">{{ 'customer.addresses.country' | t }}</label>
+        <div class="select">
+          <select id="AddressCountryNew" name="address[country]" data-default="{{ form.country }}" autocomplete="country">
+          {{ all_country_option_tags }}
+          </select>
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+            <use href="#icon-caret" />
+          </svg>
+        </div>
+      </div>
+      <div>
+        {{ form.set_as_default_checkbox }}
+        <label for="address_default_address_new newmobile">{{ 'customer.addresses.set_default' | t }}</label>
+      </div>
+      <div class="add_adddress-button">
+        <button id="add-address">{{ 'customer.addresses.add' | t }}</button> {% comment %} <button type="reset">{{ 'customer.addresses.cancel' | t }}</button> {% endcomment %}
+      </div>
+      {% endform %}
+    </div>
+  </ul>
+  <ul role="list" class="customer_address">
+    {%- for address in customer.addresses  -%} 
+    <li data-address class="adress">
+      <div class="edit__heads">
+        <div class="address_text">
+          {%- if address == customer.default_address -%} 
+          <h2>{{ 'customer.addresses.default' | t }}</h2>
+          {%- endif -%} <span class="customer-name f-w-blod">{{ address.name }}</span>
+          {{ address | format_address | remove: address.name | replace_first: '<br>', '' }}
+          <p class="customer_phone">Phone number:{{ address.phone }}</p>
+        </div>
+        <div id="edit_form__buttons">
+          <button type="button" id="EditFormButton_{{ address.id }}" class="EditButton" aria-label="{{ 'customer.addresses.edit_address' | t }} {{ forloop.index }}" aria-controls="EditAddress_{{ address.id }}" aria-expanded="false" data-address-id="{{ address.id }}">
+            <svg width="21" height="21" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.5 17.125V21.5H4.875L17.7783 8.59665L13.4033 4.22165L0.5 17.125ZM21.1617 5.21332C21.6167 4.75832 21.6167 4.02332 21.1617 3.56832L18.4317 0.83832C17.9767 0.38332 17.2417 0.38332 16.7867 0.83832L14.6517 2.97332L19.0267 7.34832L21.1617 5.21332Z" fill="#575757"></path>
+            </svg>
+          </button>
+          <button id="deleteButton" class="deleteButton" type="button" aria-label="{{ 'customer.addresses.delete' | t }} {{ forloop.index }}" data-target="{{ address.url }}" data-confirm-message="{{ 'customer.addresses.delete_confirm' | t }}">
+            <svg width="16.33" height="21" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.00016 19.1667C2.00016 20.45 3.05016 21.5 4.3335 21.5H13.6668C14.9502 21.5 16.0002 20.45 16.0002 19.1667V5.16667H2.00016V19.1667ZM17.1668 1.66667H13.0835L11.9168 0.5H6.0835L4.91683 1.66667H0.833496V4H17.1668V1.66667Z" fill="#575757"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </li>
+    {%- endfor -%} 
+  </ul>
+  <ul role="list" class="customer_address_list">
+    {%- for address in customer.addresses -%} 
+    <li data-address class="adress">
+      <div class="edit__heads">
+        <div class="address_text">
+          {%- if address == customer.default_address -%} 
+          <h2>{{ 'customer.addresses.default' | t }}</h2>
+          {%- endif -%} <span class="customer-name f-w-blod">{{ address.name }}</span>
+          {{ address | format_address | remove: address.name | replace_first: '<br>', '' }}
+          <p class="customer_phone">Phone number:{{ address.phone }}</p>
+        </div>
+        <div id="edit_form__buttons">
+          <button type="button" id="EditFormButton_{{ address.id }}" class="EditButton" aria-label="{{ 'customer.addresses.edit_address' | t }} {{ forloop.index }}" aria-controls="EditAddress_{{ address.id }}" aria-expanded="false" data-address-id="{{ address.id }}">
+            <svg width="21" height="21" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.5 17.125V21.5H4.875L17.7783 8.59665L13.4033 4.22165L0.5 17.125ZM21.1617 5.21332C21.6167 4.75832 21.6167 4.02332 21.1617 3.56832L18.4317 0.83832C17.9767 0.38332 17.2417 0.38332 16.7867 0.83832L14.6517 2.97332L19.0267 7.34832L21.1617 5.21332Z" fill="#575757"></path>
+            </svg>
+          </button>
+          <button id="deleteButton" class="deleteButton" type="button" aria-label="{{ 'customer.addresses.delete' | t }} {{ forloop.index }}" data-target="{{ address.url }}" data-confirm-message="{{ 'customer.addresses.delete_confirm' | t }}">
+            <svg width="16.33" height="21" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.00016 19.1667C2.00016 20.45 3.05016 21.5 4.3335 21.5H13.6668C14.9502 21.5 16.0002 20.45 16.0002 19.1667V5.16667H2.00016V19.1667ZM17.1668 1.66667H13.0835L11.9168 0.5H6.0835L4.91683 1.66667H0.833496V4H17.1668V1.66667Z" fill="#575757"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </li>
+    {%- endfor -%} 
+  </ul>
+  {%- for address in customer.addresses -%} 
+  <div class="EditAddress" id="EditAddress_{{ address.id }}">
+    <div class="editform_heads">
+      <button type="reset" class="cancel_btn" id="cancel_btn">
+      {% render 'cross-icon' %}</button>
+      <h2 class="edit_address">{{ 'customer.addresses.edit_address' | t }}</h2>
+    </div>
+    {%- form 'customer_address', address , class: 'contact-Form'-%} 
+    <div class="phone_add">
+      <label for="AddressPhoneEdit">{{ 'customer.addresses.phone' | t }}</label>
+      <div class="country_code_edit">+91</div>
+      <div class="field" id="field-large">
+        <input id="AddressPhoneEdit" class="input-Maxlength remove-zero" type="number"  name="address[phone]" value="{{ form.phone }}" autocomplete="tel" placeholder="{{ 'customer.addresses.phone' | t }}" required>
+      </div>
+        <div class="errorMessage">Please enter a valid phone number.</div>
+    </div>
+    <div class="address_add">
+      <label for="AddressAddress1New">{{ 'customer.addresses.address1' | t }}</label>
+      <div class="field" id="field-large">
+        <input type="text" id="AddressAddress1New" name="address[address1]" value="{{ form.address1 }}" autocomplete="address-line1" placeholder="{{ 'customer.addresses.address1' | t }}" required>
+      </div>
+        <label for="AddressAddress2New">{{ 'customer.addresses.address2' | t }}</label>
+        <div class="field">
+          <input type="text" id="AddressAddress2New" name="address[address2]" value="{{ form.address2 }}" autocomplete="address-line2" placeholder="{{ 'customer.addresses.address2' | t }}">
+        </div>
+    </div>
+    <div class="small-fields">
+      <div class="pincode_add field-small">
+        <label for="AddressZipNew">{{ 'customer.addresses.zip' | t }}</label>
+        <div class="field">
+          <input type="text" id="AddressZipNew" name="address[zip]" value="{{ form.zip }}" autocapitalize="characters" autocomplete="postal-code" placeholder="{{ 'customer.addresses.zip' | t }}" required>
+        </div>
+      </div>
+      <div class="address_add field-small">
+        <label for="AddressCityNew">{{ 'customer.addresses.city' | t }}</label>
+        <div class="field">
+          <input type="text" id="AddressCityNew" name="address[city]" value="{{ form.city }}" autocomplete="address-level2" placeholder="{{ 'customer.addresses.city' | t }}" required>
+        </div>
+      </div>
+    </div>
+    <div id="AddressProvinceContainer_{{ form.id }}">
+      <label for="AddressProvince_{{ form.id }}">
+      {{ 'customer.addresses.province' | t }}
+      </label>
+      <div class="select">
+        <select id="AddressProvince_{{ form.id }}" name="address[province]" data-default="{{ form.province }}" autocomplete="address-level1" ></select>
+        <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+          <use href="#icon-caret" />
+        </svg>
+      </div>
+    </div>
+    <div>
+      <label for="AddressCountryNew">{{ 'customer.addresses.country' | t }}</label>
+      <div class="select">
+        <select id="AddressCountryNew" name="address[country]" data-default="{{ form.country }}" autocomplete="country">
+        {{ all_country_option_tags }}
+        </select>
+        <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+          <use href="#icon-caret" />
+        </svg>
+      </div>
+    </div>
+    <div>
+      {{ form.set_as_default_checkbox }}
+      <label for="address_default_address_new newmobile">{{ 'customer.addresses.set_default' | t }}</label>
+    </div>
+    <div id="editButton">
+      <button id="edit-save" style="position:relative;">{{ 'customer.addresses.update' | t }}</button>
+    </div>
+    {% endform %}
+  </div>
+  {% endfor %} 
+  <div id="viewAllAddress"></div>
+</div>
+
+
+
+

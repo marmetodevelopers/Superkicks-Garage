@@ -1,0 +1,248 @@
+<div class="order-detail_container">
+  <div class="order_description">
+    <div class="order_detail">
+      <div class="order_name_id">
+        <p class="name_order">{{ 'customer.order.title' | t: name: order.name }}</p>
+      </div>
+      <div class="order_date_cancelled">
+        {%- assign order_date = order.created_at | time_tag: format: 'date_at_time' -%} 
+        <p>{{ 'customer.order.date_html' | t: date: order_date }}</p>
+      </div>
+    </div>
+  </div>
+  {%- for line_item in order.line_items -%} 
+  <div class="order_deatails">
+    <div class="item_image"> 
+      {% if line_item.image != blank %} 
+        <a href="{{ line_item.url }}">     
+          {{ line_item.image | image_url: width: 1946 | image_tag:
+            loading: lazy,
+            sizes: sizes,
+            widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946',
+            alt: line_item.image.alt | escape
+          }}
+        </a>
+      {% endif %} 
+    </div>
+    <div class="order_info">
+      <div>
+        {%- if line_item.url != blank -%}
+        <a href="{{ line_item.url }}">
+          <p class="order_name">{{ line_item.title }}</p>
+        </a>
+        {%- else -%}
+        <p class="order_name">{{ line_item.title }}</p>
+        {%- endif -%}
+        {%- assign property_size = line_item.properties | size -%} 
+        {%- unless line_item.selling_plan_allocation == null and property_size == 0 -%} 
+        <div class="properties"> 
+          {%- unless line_item.product.has_only_default_variant -%} 
+          <span class="order_namer">
+          {{ line_item.variant.title }}
+          </span> 
+          {%- endunless -%} 
+          {%- unless line_item.selling_plan_allocation == null -%} 
+          <span class="order_name">
+          {{ line_item.selling_plan_allocation.selling_plan.name }}
+          </span> 
+          {%- endunless -%} 
+          {%- if property_size != 0 -%} 
+          {%- for property in line_item.properties -%} 
+          {% assign property_first_char = property.first | slice: 0 %} 
+          {%- if property.last != blank and property_first_char != '_' -%} 
+          <span class="order_name">
+          {{ property.first }}:&nbsp; 
+          {%- if property.last contains '/uploads/' -%} 
+          <a href="{{ property.last }}">{{ property.last | split: '/' | last }}</a> 
+          {%- else -%} 
+          {{ property.last }} 
+          {%- endif -%} 
+          </span> 
+          {%- endif -%} 
+          {%- endfor -%} 
+          {%- endif -%} 
+        </div>
+        {%- endunless -%} 
+        {%- if line_item.line_level_discount_allocations != blank -%} 
+        <ul style ="margin:0; padding:0;"role="list" aria-label="{{ 'customer.order.discount' | t }}">
+          {%- for discount_allocation in line_item.line_level_discount_allocations -%} 
+          <li>
+            {{- discount_allocation.discount_application.title }} (- {{- discount_allocation.amount | money_without_trailing_zeros -}} )
+          </li>
+          {%- endfor -%} 
+        </ul>
+        {%- endif -%} 
+      </div>
+      <div>
+        <p class="order_varient"> Varient:<span class="order_span">{{ line_item.variant.title }}</span>
+        </p>
+      </div>
+      <div>
+        <p class="order_quantity"> Quantity:<span class="order_span">{{ line_item.quantity }}</span>
+        </p>
+      </div>
+      <div class="total-order">
+        <p class="order_total"> Total:<span class="order_span"></span></p>
+        <div class="order_span" headers="Row{{ line_item.key }} ColumnTotal" role="cell" data-label="{{ 'customer.order.total' | t }}" id="ColumnTotalBody">
+          {% if line_item.original_line_price != line_item.final_line_price %}
+          <div class="product_price" style="display:flex">
+            <span class="visually-hidden">{{ 'products.product.price.regular_price' | t }}</span>
+            <p class="regular-price">
+              <s>{{ line_item.original_line_price | money_without_trailing_zeros }}</s>
+            </p>
+            <span class="visually-hidden">{{ 'products.product.price.sale_price' | t }}</span>
+            <p>
+              <span>{{ line_item.final_line_price | money_without_trailing_zeros }}</span>
+            </p>
+          </div>
+          {% else %} 
+          <div>
+            {{ line_item.original_line_price | money_without_trailing_zeros }}
+          </div>
+          {% endif %} 
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer_table">
+    <div class="order_status">
+      <div>
+        <p>Order Status:</p>
+      </div>
+      <div>
+        {% if order.cancelled %}
+        <p class="order_canceld">Cancelled</p>
+        {% else %}
+          {% if order.fulfillment_status_label == 'Fulfilled' %}
+          {% for line_item in order.line_items %}
+          {% if forloop.first %}
+          <a href="{{ line_item.fulfillment.tracking_url }}">
+            <buttton class="button fulfillment">Track Order</buttton>
+          </a>
+          {% endif %}
+          {% endfor %}
+          {% elsif order.fulfillment_status_label == 'Unfulfilled' -%}
+        <p class="order_processing">Order Processing</p>
+        {%- else -%}
+        {{- order.fulfillment_status_label -}}
+        {%- endif %}
+        {% endif %}
+      </div>
+    </div>
+      <div class="tracking_number">
+          <div>
+            <p>Tracking Number</p>
+          </div>
+           {% if order.fulfillment_status_label == 'Fulfilled' %}
+            {% for line_item in order.line_items %}
+            {% if forloop.first %}
+            {{ line_item.fulfillment.tracking_number}}
+            {% endif %}
+            {% endfor %}
+             {% else %}
+             <p>_______</p>
+            {% endif %}
+        </div>
+    <div class="footer_subtotal w-100">
+      <div class="subtotal_text w-50">
+        <p>Subtotal:</p>
+      </div>
+      <div class="subtotal_amount w-50 t-r">
+        <p>{{ order.line_items_subtotal_price | money_without_trailing_zeros }}</p>
+      </div>
+    </div>
+    <div class="footer_discount w-100">
+      <div class="discount_tittle discount_text w-50">
+        <p>Discount:</p>
+         {%- for discount in order.discounts -%}
+            <p class="discount_code">({{ discount.code }})</p>
+        {% endfor %}
+      </div>
+      <div class="discount_amount w-50 t-r">
+        {%- for discount_application in order.cart_level_discount_applications -%}
+        <span>-{{ discount_application.total_allocated_amount | money_without_trailing_zeros }}</span>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="footer_delivery w-100">
+      <div class="delivery_text w-50">
+        <p>Delivery Charges:</p>
+      </div>
+      <div class="delivery_amount w-50 t-r">
+        <p>{{ order.shipping_price | money_without_trailing_zeros }}</p>
+      </div>
+    </div>
+    <div class="footer_total w-100">
+      <div class="total_text w-50">
+        <p>Total:</p>
+      </div>
+      <div class="total_amount w-50 t-r">
+        <p>{{ order.total_net_amount | money_without_trailing_zeros }}</p>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+<div class="customer_billing">
+  <h2>{{ 'customer.order.billing_address' | t }}</h2>
+  <div class="billing__address-card">
+    {% if order.billing_address.name != blank %} 
+    <p class="billing_name">
+      {{ order.billing_address.name }}
+    </p>
+    {% endif %} {{ order.billing_address | format_address | replace: '<br>', ', ' }}
+    <p class="billing_number">Phone number: {{ order.billing_address.phone }}</p>
+  </div>
+</div>
+<div class="customer_billing shipping">
+  <h2 class="customer_billing-header">{{ 'customer.order.shipping_address' | t }}</h2>
+  <div class="shipping__address-card">
+    {% if order.shipping_address.name != blank %} 
+    <p class="billing_name">
+      {{ order.shipping_address.name }}
+    </p>
+    {% endif %} 
+    <p class="billing_name">{{ order.shipping_address | format_address | replace: '<br>', ', ' }}</p>
+    <p class="billing_number">Phone number: {{ order.shipping_address.phone }}</p>
+  </div>
+</div>
+
+{% style %}
+  .discount_tittle{
+    display:flex;
+  }
+  .discount_code{
+    padding-left:1rem;
+  }
+  .tracking_number{
+    display:flex;
+    justify-content: space-between;
+  }
+ .tracking {
+   font-size: 1.4rem;
+   background: black;
+   color: #fff;
+   padding: 1rem;
+   height: 4rem;
+   display: flex;
+   align-items: center;
+   border-radius: 8px;
+   font-weight: 600;
+ }
+
+ .fulfillment_status {
+   color: #fff !important;
+ }
+
+ .order_canceld,
+ .order_processing {
+   font-weight: 900;
+ }
+
+ .order_status {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+{% endstyle %}
+

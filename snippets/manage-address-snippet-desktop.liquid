@@ -1,0 +1,225 @@
+<script src="{{ 'input-box.js' | asset_url }}" defer="defer"></script>
+
+<div class="customer addresses" data-customer-addresses>
+  <div class="address_title_description">
+    <div class="address_title">
+      <svg class="address_svg" width="19" height="20"  viewBox="0 0 26 28" fill="none" xmlns="http://www.w3.org/2000/svg" >
+        <path d="M17.25 13.5834V5.08337L13 0.833374L8.75 5.08337V7.91671H0.25V27.75H25.75V13.5834H17.25ZM5.91667 24.9167H3.08333V22.0834H5.91667V24.9167ZM5.91667 19.25H3.08333V16.4167H5.91667V19.25ZM5.91667 13.5834H3.08333V10.75H5.91667V13.5834ZM14.4167 24.9167H11.5833V22.0834H14.4167V24.9167ZM14.4167 19.25H11.5833V16.4167H14.4167V19.25ZM14.4167 13.5834H11.5833V10.75H14.4167V13.5834ZM14.4167 7.91671H11.5833V5.08337H14.4167V7.91671ZM22.9167 24.9167H20.0833V22.0834H22.9167V24.9167ZM22.9167 19.25H20.0833V16.4167H22.9167V19.25Z" fill="#223263"/>
+      </svg>
+      <h1>{{ 'customer.addresses.title' | t }}</h1>
+    </div>
+    <div class="add-button">
+      <button class="add_button_desktop" id="add_button_desktop" type="button" aria-expanded="false" aria-controls="AddAddress" >
+      {{ 'customer.addresses.add_new' | t }}
+      </button>
+    </div>
+  </div>
+  <ul role="list" class="adress_container" id="adress_container_desktop">
+    <div id="AddAddress_desktop" class="popup-container">
+      {%- form 'customer_address', customer.new_address, aria-labelledBy: 'AddressNewHeading', class: 'contact-Form' -%}
+      <div class="add_address_title popup_sticky">
+        <h2>Add Address</h2>
+        <div class="cancel_button_container">
+          <button type="reset" id="cancel_btn__add-desktop">{% render 'cross_icon_desktop' %}</button>
+        </div>
+      </div>
+      <div class="phone_add">
+        <label for="AddressPhoneNew">{{ 'customer.addresses.phone' | t }}</label>
+        <div class="country_code">+91</div>
+        <div class="field" id="field-large">
+          <input id="AddressPhoneNew" class="input-Maxlength remove-zero" type="number" name="address[phone]" value="{{ form.phone }}" autocomplete="tel" placeholder="{{ 'customer.addresses.phone' | t }}" required>
+        </div>
+          <div class="errorMessage">Please enter a valid phone number.</div>          
+      </div>
+      <div class="address_add">
+        <label for="AddressAddress1New">{{ 'customer.addresses.address1' | t }}</label>
+        <div class="field" id="field-large">
+          <input type="text" id="AddressAddress1New" name="address[address1]" value="{{ form.address1 }}" autocomplete="address-line1" placeholder="{{ 'customer.addresses.address1' | t }}" required>
+        </div>
+        <label for="AddressAddress2New">{{ 'customer.addresses.address2' | t }}</label>
+        <div class="field">
+          <input type="text" id="AddressAddress2New" name="address[address2]" value="{{ form.address2 }}" autocomplete="address-line2" placeholder="{{ 'customer.addresses.address2' | t }}">
+        </div>
+      </div>
+      <div class="small-fields">
+        <div class="pincode_add field-small">
+          <label for="AddressZipNew">{{ 'customer.addresses.zip' | t }}</label>
+          <div class="field">
+            <input type="text" id="AddressZipNew" name="address[zip]" value="{{ form.zip }}" autocapitalize="characters" autocomplete="postal-code" placeholder="{{ 'customer.addresses.zip' | t }}" required>
+          </div>
+        </div>
+        <div class="address_add field-small">
+          <label for="AddressCityNew">{{ 'customer.addresses.city' | t }}</label>
+          <div class="field">
+            <input type="text" id="AddressCityNew" name="address[city]" value="{{ form.city }}" autocomplete="address-level2" placeholder="{{ 'customer.addresses.city' | t }}" required>
+          </div>
+        </div>
+      </div>
+      <div id="AddressProvinceContainerNew">
+        <label for="AddressProvinceNew">{{ 'customer.addresses.province' | t }}</label>
+        <div class="select">
+          <select id="AddressProvinceNew" name="address[province]" data-default="{{ form.province }}" autocomplete="address-level1" ></select>
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+            <use href="#icon-caret" />
+          </svg>
+        </div>
+      </div>
+      <div>
+        <label for="AddressCountryNew">{{ 'customer.addresses.country' | t }}</label>
+        <div class="select">
+          <select id="AddressCountryNew" name="address[country]" data-default="{{ form.country }}" autocomplete="country" >
+          {{ all_country_option_tags }}
+          </select>
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+            <use href="#icon-caret" />
+          </svg>
+        </div>
+      </div>
+      <div>
+        {{ form.set_as_default_checkbox }}
+        <label for="address_default_address_new newdesktop">{{ 'customer.addresses.set_default' | t }}</label>
+      </div>
+      <div class="button-overlay">
+        <button id="add-address_desktop" class="globalButton">{{ 'customer.addresses.add' | t }}</button>
+      </div>
+      {% endform %}
+    </div>
+  </ul>
+  <ul role="list" class="Edit_address">
+    {%- for address in customer.addresses -%}
+    <li data-address class="adress">
+      <div class="edit__heads">
+        <div class="address_text">
+          {%- if address == customer.default_address -%}
+          <h2>{{ 'customer.addresses.default' | t }}</h2>
+          {%- endif -%}
+          <span class="customer-name f-w-blod">{{ address.name }}</span>
+          {{ address  | format_address |remove: address.name |replace_first: '<br>', '' }}
+          <p class="customer_phone">Phone number:{{ address.phone }}</p>
+        </div>
+        <div id="edit_form__buttons">
+          <button type="button" id="EditFormButton_{{ address.id }}" class="EditButton" aria-label="{{ 'customer.addresses.edit_address' | t }} {{ forloop.index }}" aria-controls="EditAddress_{{ address.id }}" aria-expanded="false" data-address-id="{{ address.id }}" >
+            <svg width="21" height="21" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.5 17.125V21.5H4.875L17.7783 8.59665L13.4033 4.22165L0.5 17.125ZM21.1617 5.21332C21.6167 4.75832 21.6167 4.02332 21.1617 3.56832L18.4317 0.83832C17.9767 0.38332 17.2417 0.38332 16.7867 0.83832L14.6517 2.97332L19.0267 7.34832L21.1617 5.21332Z" fill="#575757"></path>
+            </svg>
+          </button>                                   
+          <button id="deleteButton" class="deleteButton" type="button" aria-label="{{ 'customer.addresses.delete' | t }} {{ forloop.index }}" data-target="{{ address.url }}" data-confirm-message="{{ 'customer.addresses.delete_confirm' | t }}" >
+            <svg width="16.33" height="21" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.00016 19.1667C2.00016 20.45 3.05016 21.5 4.3335 21.5H13.6668C14.9502 21.5 16.0002 20.45 16.0002 19.1667V5.16667H2.00016V19.1667ZM17.1668 1.66667H13.0835L11.9168 0.5H6.0835L4.91683 1.66667H0.833496V4H17.1668V1.66667Z" fill="#575757"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </li>
+    {%- endfor -%}
+  </ul>
+  {%- for address in customer.addresses -%}
+  <div class="EditAddress_desktop popup-container" id="EditAddress_{{ address.id }}">
+    <div class="editform_heads popup_sticky">
+      <h2 class="edit_address">{{ 'customer.addresses.edit_address' | t }}</h2>
+      <div class="cancel_button_container">
+        <button type="reset" id="cancel_btn__edit-desktop">{% render 'cross_icon_desktop' %}</button>
+      </div>
+    </div>
+      {%- form 'customer_address', address,  class: 'contact-Form' -%}
+    <div class="phone_add">
+      <label for="AddressPhoneEdit">{{ 'customer.addresses.phone' | t }}</label>
+      <div class="country_code_edit">+91</div>
+      <div class="field" id="field-large">
+        <input id="AddressPhoneEdit" class="input-Maxlength remove-zero" type="number" name="address[phone]" value="{{ form.phone }}" autocomplete="tel" placeholder="{{ 'customer.addresses.phone' | t }}" required>
+      </div>
+      <div class="errorMessage">Please enter a valid phone number.</div>
+    </div>
+    <div class="address_add">
+      <label for="AddressAddress1New">{{ 'customer.addresses.address1' | t }}</label>
+      <div class="field" id="field-large">
+        <input type="text" id="AddressAddress1New" name="address[address1]" value="{{ form.address1 }}" autocomplete="address-line1" placeholder="{{ 'customer.addresses.address1' | t }}" required>
+      </div>
+      <label for="AddressAddress2New">{{ 'customer.addresses.address2' | t }}</label>
+      <div class="field">
+        <input type="text" id="AddressAddress2New" name="address[address2]" value="{{ form.address2 }}" autocomplete="address-line2" placeholder="{{ 'customer.addresses.address2' | t }}">
+        </div>
+    </div>
+    <div class="small-fields">
+      <div class="pincode_add field-small">
+        <label for="AddressZipNew">{{ 'customer.addresses.zip' | t }}</label>
+        <div class="field">
+          <input type="text" id="AddressZipNew" name="address[zip]" value="{{ form.zip }}" autocapitalize="characters" autocomplete="postal-code" placeholder="{{ 'customer.addresses.zip' | t }}" required>
+        </div>
+      </div>
+      <div class="address_add field-small">
+        <label for="AddressCityNew">{{ 'customer.addresses.city' | t }}</label>
+        <div class="field">
+          <input type="text" id="AddressCityNew" name="address[city]" value="{{ form.city }}" autocomplete="address-level2" placeholder="{{ 'customer.addresses.city' | t }}" required>
+        </div>
+      </div>
+    </div>
+    <div id="AddressProvinceContainer_{{ form.id }}">
+      <label for="AddressProvince_{{ form.id }}">
+      {{ 'customer.addresses.province' | t }}
+      </label>
+      <div class="select">
+        <select id="AddressProvince_{{ form.id }}" name="address[province]" data-default="{{ form.province }}" autocomplete="address-level1" ></select>
+        <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+          <use href="#icon-caret" />
+        </svg>
+      </div>
+    </div>
+    <div>
+      <label for="AddressCountryNew">{{ 'customer.addresses.country' | t }}</label>
+      <div class="select">
+        <select id="AddressCountryNew" name="address[country]" data-default="{{ form.country }}" autocomplete="country" >
+        {{ all_country_option_tags }}
+        </select>
+        <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+          <use href="#icon-caret" />
+        </svg>
+      </div>
+    </div>
+    <div>
+      {{ form.set_as_default_checkbox }}
+      <label for="address_default_address_new newmobile">{{ 'customer.addresses.set_default' | t }}</label>
+    </div>
+    <div id="editButton" class="edit_save-address">
+      <button id="edit-save">{{ 'customer.addresses.update' | t }}</button>
+    </div>
+    {% endform %}
+  </div>
+  {% endfor %}
+</div>
+
+<script>
+// Get the delete button element by its ID
+const deleteButton = document.getElementById('deleteButton');
+
+// Function to handle the button click event
+function handleButtonClick() {
+    // Replace 'account' with the desired URL you want to navigate to
+    const accountURL = '/account';
+    window.location.href = accountURL;
+}
+
+// Add event listener for 'click' event on the delete button
+deleteButton.addEventListener('click', handleButtonClick);
+</script>
+             
+<style>
+.popup-container {
+  height: 380px; /* Adjust the height as needed */
+  overflow-x:hidden;
+}
+/* Customize the scrollbar appearance */
+.popup-container::-webkit-scrollbar {
+  display:none;
+}
+.popup_sticky{
+  position: sticky;
+  top: -10px;
+  height: 30px;
+  z-index: 999;
+  background: #fff;
+}
+
+</style>
+
+                  

@@ -1,0 +1,2047 @@
+
+#tablinks {
+  background: none;
+  /* font-family: "Anek Latin"; */
+  font-family: 'Anek Latin', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.5px;
+  --border-offset: none;
+  --border-opacity: none;
+  color: #000;
+  border-radius: 0;
+  width: 35%;
+}
+.tabs_desktop{
+  display: none;
+}
+/* .overflow{
+  overflow:hidden;
+} */
+
+/* Style the tab buttons */
+.tablinks {
+  padding: 8px 16px;
+  cursor: pointer;
+  width: 33.33%;
+}
+
+.customer {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  padding: 0;
+}
+
+button:hover {
+  border: none;
+  --border-opacity: transparent;
+}
+.tracking-status{
+  color: #223263;
+  font-size: 16px;
+  font-weight: 500;
+}
+.track_order {
+  margin-right: 31px;
+  /* font-family: "Anek Latin"; */
+  font-family: 'Anek Latin', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-decoration-line: underline;
+  margin-top: 9%;
+}
+
+
+
+.track_order a {
+  color: #223263;
+  text-decoration: underline;
+}
+
+.order_description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.customer a:hover {
+  color: #223263 !important;
+  text-decoration-thickness: 0;
+}
+
+
+
+.mobile_tabs {
+  width: 100%;
+  background: #ffffff;
+  overflow-x: scroll;
+  white-space: nowrap;
+
+}
+
+.w-100 {
+  width: 100;
+}
+
+.t-r {
+  text-align: inline;
+}
+
+.mobile_tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.footer {
+  display: none;
+}
+
+#MainContent {
+  background: #fff;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 20px;
+}
+
+.add_edit_inputs {
+  outline: none;
+  box-shadow: none;
+  width: 100%;
+  border: 1px solid #cdcdce;
+  border-radius: 5px;
+}
+
+
+
+.tablinks {
+  padding: 10px;
+  cursor: pointer;
+  color: #838383;
+}
+
+.tablinks.active {
+  color: #fff !important;
+  border-bottom: 2px solid #000;
+}
+
+.profile__email,
+.profile__number {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.customer__title {
+  /* font-family: "Anek Latin"; */
+  font-family: 'Anek Latin', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  margin-top: 0;
+}
+.customer_default_title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: rgba(87, 87, 87, 0.72);
+  margin-bottom: 0;
+}
+
+.cust__mail {
+  /* font-family: "Anek Latin"; */
+  font-family: 'Anek Latin', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #000000;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+}
+
+.my_orders_container {
+  background: #ffffff;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 8px;
+  margin-top: 15px;
+}
+
+
+.track {
+  display: flex;
+  flex-direction: column;
+}
+
+.track_span a {
+  /* font-family: "Anek Latin"; */
+  font-family: 'Anek Latin', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: left;
+  letter-spacing: 0.5px;
+  text-decoration-line: underline;
+  color: #223263;
+  margin-top: 6px;
+}
+
+
+
+.logout_url a:hover {
+  color: #575757bd !important;
+}
+
+
+.order_description {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 0 7px;
+  margin: 10px 0;
+}
+
+.name_order {
+  /* font-family: "Anek Latin"; */
+  font-family: 'Anek Latin', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: #000000;
+  margin: 0;
+}
+
+.id_order {
+  /* font-family: "Anek Latin"; */
+  font-family: 'Anek Latin', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: #9a9a9a;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.item_image img {
+  width: 78px;
+  height: 72px;
+  object-fit: cover;
+}
+
+.order_deatails {
+  display: flex;
+  padding: 1rem;
+  background: #ffffff;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.billing__address-card p,
+.shipping__address-card p {
+  padding-right: 5px;
+}
+
+.order_name {
+  /* font-family: "Anek Latin"; */
+   font-family: 'Anek Latin', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.82);
+}
+
+.order_varient,
+.order_quantity,
+.total-order {
+  /* font-family: "Anek Latin"; */
+  font-family: 'Anek Latin', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #223263;
+  margin-top: 0;
+}
+
+.order_span {
+  color: rgba(0, 0, 0, 0.82);
+  padding-left: 4px;
+}
+
+.total-order {
+  display: flex;
+  align-items: center;
+  height: 20px;
+}
+
+.footer_table {
+  background: #ffffff;
+  border-radius: 5px;
+  margin: 1rem 0;
+  padding: 6px 1rem;
+}
+
+.footer_subtotal,
+.footer_delivery,
+.footer_total,
+.footer_discount {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 9px;
+}
+
+.subtotal_text,
+.delivery_text,
+.discount_text {
+  /* font-family: "Anek Latin"; */
+      font-family: 'Anek Latin', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #223263;
+}
+
+.total_text {
+  /* font-family: "Anek Latin"; */
+  font-family: 'Anek Latin', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #8d0349;
+}
+
+.delivery_amount,
+.discount_amount,
+.subtotal_amount {
+  /* font-family: "Anek Latin"; */
+  font-family: 'Anek Latin', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.82);
+}
+
+.total_amount {
+  /* font-family: "Anek Latin"; */
+  font-family: 'Anek Latin', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #167a81;
+}
+
+.billing__address-card,
+.shipping__address-card {
+  background: #ffffff;
+  border: 1px solid #dfdfdf;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 12px 0 17px 14px;
+  margin: 10px 0;
+  /* font-family: "Anek Latin"; */
+  font-family: 'Anek Latin', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #575757;
+}
+
+.customer_billing h2 {
+  /* font-family: "Anek Latin"; */
+  font-family: 'Anek Latin', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  color: #223263;
+  margin: 0 10px;
+}
+
+.billing_name {
+  /* font-family: "Anek Latin"; */
+  font-family: 'Anek Latin', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+  margin-bottom: 10px !important;
+}
+
+.shipping__address-card p,
+.billing__address-card p {
+  margin: 0;
+}
+
+#mm_order_detail_mobile {
+  display: none;
+}
+
+.logout_url_mobile a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  /* font-family: "Anek Latin"; */
+  font-family: 'Anek Latin', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  padding-top: 2rem;
+  text-decoration: none;
+}
+
+input {
+  padding-bottom: 20px !important;
+  color: #000000;
+}
+
+#AddAddress label {
+  /* font-family: "Helvetica"; */
+  font-family: 'Anek Latin', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: rgba(87, 87, 87, 0.72);
+}
+
+.recent_order_id,
+.order_status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.my_order_text {
+  /* font-family: "Anek Latin"; */
+  font-family: 'Anek Latin', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tabs-svg {
+  margin-right: 5px;
+}
+
+.tablinks.active .tabs-svg {
+  display: inline-block;
+}
+
+
+
+input:focus::after {
+  content: none;
+}
+
+#viewLessRecent {
+  display: none;
+}
+
+.p-r-20 {
+  padding-right: 20px;
+}
+
+#viewLessMyOrders {
+  display: none;
+}
+
+
+
+#viewAllMyOrders {
+  margin-top: 30px;
+}
+
+#add_button {
+  width: 180px;
+  height: 32px;
+  background: #000;
+  border: 1px solid #949594;
+  border-radius: 5px;
+  /* font-family: Anek Latin; */
+  font-family: 'Anek Latin', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #fff;
+  --border-offset: none;
+  --blog-card-border-opacity: none;
+}
+
+.add_button_container {
+  display: flex;
+  padding: 10px;
+  justify-content: flex-end;
+}
+
+.customer_address {
+  padding-left: 1rem;
+}
+
+#AddAddress input {
+  /* font-family: "Anek Latin"; */
+  font-family: 'Anek Latin', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+
+#EditAddress input {
+  /* font-family: "Anek Latin"; */
+  font-family: 'Anek Latin', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #000000;
+}
+
+.customer_address_list {
+  display: none;
+}
+
+#viewLessAddress {
+  display: none;
+}
+
+.adress_container {
+  width: 100%;
+  padding: 0;
+}
+
+.address_text_list {
+  display: none;
+}
+
+#AddAddress {
+  display: none;
+}
+
+#AddAddress {
+  position: relative;
+}
+
+.small-fields {
+  display: flex;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+#AddressProvinceContainerNew {
+  margin-top: 10px;
+}
+
+.select_country {
+  margin-top: 10px;
+}
+
+#cancel_btn__add {
+  top: 0;
+  right: -5%;
+  background: none;
+  outline: none;
+  box-shadow: none;
+  --border-offset: none;
+  margin: 0;
+  padding: 0;
+}
+
+#AddressAddress1New {
+  height: 70px;
+}
+
+.phone_add {
+  margin-bottom: 15px;
+}
+
+.add_address_title h2 {
+  /* font-family: "Anek Latin"; */
+  font-family: 'Anek Latin', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #000;
+  margin: 0;
+}
+
+.cancel_button_container {
+  display: flex;
+  position: absolute;
+  right: -15%;
+  top: 0%;
+}
+
+.edit__heads {
+  display: flex;
+  gap: 13%;
+  width: 100%;
+}
+
+.EditButton {
+  min-width: 0 !important;
+}
+
+#edit_form__buttons {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  right: 0;
+}
+
+#deleteButton {
+  background: none;
+  min-width: 0rem;
+}
+
+#deleteButton svg {
+  height: 21px;
+  width: 16.33px;
+}
+
+.EditButton {
+  background: none !important;
+  min-width: 5rem;
+}
+
+.EditButton svg {
+  height: 21px;
+  width: 21px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.adress {
+  background: #ffffff;
+  border: 1px solid #dfdfdf;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.customer_address .adress:first-child {
+  margin-top: 15px;
+}
+
+.address_text {
+  /* font-family: "Anek Latin"; */
+  font-family: 'Anek Latin', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #364045;
+}
+
+.address_text h2 {
+  width: 78px;
+  height: 25px;
+  left: 23px;
+  top: 18px;
+  background: #e4ebff;
+  border: 1px solid #cad7ff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  /* font-family: "Anek Latin"; */
+  font-family: 'Anek Latin', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: #8d0349;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.EditAddress {
+  position: relative;
+}
+
+#cancel_btn {
+  background: none;
+  position: absolute;
+  right: -15%;
+  top: 0;
+}
+
+#AddAddress select {
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+}
+
+.EditAddress select {
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+}
+
+#AddAddress .customer .field:before,
+#AddAddress .field:before {
+  display: none !important;
+}
+
+.field:after,
+.select:after,
+.customer .field:after,
+.customer select:after,
+.localization-form__select:after {
+  display: none;
+}
+
+
+
+#edit_address {
+  /* font-family: "Anek Latin"; */
+  font-family: 'Anek Latin', sans-serif; 
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #223263;
+}
+
+@media only screen and (min-width: 750px) and (max-width: 990px) {
+  body {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  body {
+    display: block;
+  }
+
+  .country_code {
+    position: absolute;
+    top: 9.6%;
+    border-right: 1px solid #e3e3e3;
+    height: 56px;
+    z-index: 999;
+    padding: 1rem;
+  }
+
+  .country_code_edit {
+   height: 56px;
+    position: absolute;
+    top: 9.6%;
+    font-size: 19px;
+    padding: 1rem;
+    z-index: 9;
+    border-right: 1px solid #e3e3e3;
+  }
+
+  .item_image img {
+    padding-right:1rem;
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+  }
+  .tabs {
+    overflow: auto;
+  }
+
+  .customer_name-field {
+    width: 100%;
+  }
+  #AddressPhoneNew, #AddressPhoneEdit {
+  padding-left: 18%;
+  padding-top: 26px;
+}
+  #AddressCountryNew {
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+  }
+  .add_button_container {
+    display: flex;
+    padding: 0;
+    justify-content: flex-end;
+  }
+
+  .customer__field-name,
+  .customer__field-mail {
+    /* font-family: "Anek Latin"; */
+    font-family: 'Anek Latin', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: #000000;
+    border: 1px solid #cbcbcb;
+    height: 35px;
+    margin-top: 0;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+  }
+
+  .default_card-cotent {
+    border: 1px solid #cbcbcb;
+    width: 100%;
+    border-radius: 8px;
+    padding-left: 10px;
+  }
+   .default_card-wrapper{
+    display:flex;
+    justify-content:space-between;
+  }
+  .edit_default-address{
+    border: 1px #808080 solid;
+    margin: 5px 5px 0;
+    padding: 0 8px;
+    border-radius: 20px;
+    background: black;
+    color: white;
+    cursor: pointer;
+     font-family: 'Anek Latin', sans-serif;
+  }
+ 
+  #AddressProvinceNew {
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+  }
+
+  .profile_container_mobile {
+    background: #ffffff;
+    box-shadow: 0 0 4px 1px #00000040;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 19px;
+  }
+
+  .addresses {
+    margin-top: 1rem;
+  }
+
+  .add_button {
+    margin: 1rem;
+  }
+
+  #add-address,
+  #edit-save {
+    width: 100%;
+    background: #000;
+    border-radius: 5px;
+    /* font-family: "Anek Latin"; */
+    font-family: 'Anek Latin', sans-serif;    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+    height: 40px;
+  }
+
+  #editButton {
+    margin: 2rem 0;
+  }
+
+  .add_adddress-button {
+    margin-top: 1rem;
+  }
+
+  .logout_card-mobile {
+    display: flex;
+    align-items: center;
+    background: #000;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+  }
+
+  .logout_text {
+    color: #fff;
+    padding-left: 0.5rem;
+  }
+}
+
+
+
+#AddAddress_desktop select {
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+}
+
+.EditAddress_desktop select {
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+}
+
+#cancel_btn__add-desktop svg {
+  position: absolute;
+  right: 20%;
+  border: 2px solid white;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+#cancel_btn__edit-desktop svg {
+  position: absolute;
+  top: 10%;
+  right: 20%;
+  border: 2px solid white;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+#viewLessMyordersDesktop {
+  display: none;
+}
+
+.home_page-icon svg {
+  margin-bottom: 3px;
+}
+
+.f-w-500 {
+  font-weight: 500;
+}
+
+.f-w-blod {
+  font-weight: bold;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  color: black;
+}
+
+.mobile_tabs .tablinks:last-child {
+  width: 50% !important;
+}
+
+.EditAddress {
+  display: none;
+}
+
+.EditAddress.visible {
+  display: block !important;
+}
+
+
+.edit_address {
+  /* font-family: "Anek Latin"; */
+  font-family: 'Anek Latin', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #000;
+  margin: 0;
+}
+
+.home_page-icon {
+  display: none;
+}
+
+#AddAddress input {
+  background: transparent;
+  padding-bottom: 20px;
+}
+
+#customer_phone {
+  /* font-family: "Anek Latin"; */
+  font-family: 'Anek Latin', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #364045;
+  margin-top: 0;
+  padding-bottom: 27px;
+}
+.recent_order_text_span{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: .5px;
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+}
+.address_text p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+#country_code_add-desktop {
+  position: absolute;
+  left: 0;
+  z-index: 9;
+  /* font-family: "Anek Latin"; */
+  font-family: 'Anek Latin', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #949594;
+  padding-left: 5px;
+}
+
+#country_code_edit-desktop {
+  position: absolute;
+  left: 0;
+  z-index: 9;
+  /* font-family: "Anek Latin"; */
+  font-family: 'Anek Latin', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #949594;
+  padding-left: 5px;
+  padding-top: 1px;
+}
+
+#address-m-svg {
+  margin-bottom: 4px;
+}
+
+.profile__name,
+.profile__email {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.customer_name-tittle,
+.customer_email-tittle {
+  /* font-family: "Anek Latin"; */
+  font-family: 'Anek Latin', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: rgba(87, 87, 87, 0.72);
+  margin-bottom: 0;
+}
+
+p {
+  margin: 0;
+}
+
+@media only screen and (min-width: 990px) {
+  body {
+    display: block;
+  }
+
+  .tabs {
+    display: none;
+  }
+
+  .customer {
+    max-width: var(--page-width);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  #edit-save {
+    background: #000;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    /* font-family: "Anek Latin"; */
+    font-family: 'Anek Latin', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+  }
+
+  #edit_form__buttons {
+    display: flex;
+    justify-content: flex-end;
+    right: 0;
+    margin-right: 20px;
+  }
+
+  .tabs_desktop {
+    display: flex;
+    width: 98%;
+  }
+
+  .tab {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border: 1px solid #cbcbcb;
+    box-shadow: 0 4px 4px #00000026;
+    border-radius: 5px;
+    width: 278px;
+    align-items: flex-start;
+    margin-left: 25px;
+    height: 20%;
+    position: sticky;
+  }
+
+  #tablinks {
+    /* font-family: "Anek Latin"; */
+    font-family: 'Anek Latin', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: left;
+    letter-spacing: 0.5px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    background: none;
+    border: none;
+    height: 24px;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .profile__name,
+  .profile__email {
+    margin-left: 23px;
+  }
+
+  .default_address-card {
+    padding: 0 22px;
+  }
+   .default_card-wrapper{
+    display:flex;
+    justify-content:space-between;
+  }
+  .edit_default-address{
+    border: 1px #808080 solid;
+    margin: 5px 5px 0;
+    padding: 0 8px;
+    border-radius: 20px;
+    background: black;
+    color: white;
+    cursor: pointer;
+  }
+  .customer__title {
+    width: 100%;
+  }
+
+  .country_code {
+    height: 54px;
+    position: absolute;
+    top: 18.5%;
+    z-index: 9;
+    padding: 11px 5px 0 5px;
+    border-right: 1px solid #e3e3e3;
+    font-size: 18px;
+    text-align: center;
+  }
+  #AddressPhoneNew, #AddressPhoneEdit {
+  padding-left: 14%;
+  padding-top: 26px;
+}
+  .default_card-cotent {
+    border: 1px solid #cbcbcb;
+    width: 50%;
+    border-radius: 8px;
+    padding-left: 10px;
+    font-size: 14px;
+  }
+
+  .customer_name-field {
+    width: 49%;
+  }
+
+  .customer__field-name,
+  .customer__field-mail {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: #000000;
+    border: 1px solid #cbcbcb;
+    height: 35px;
+    margin-top: 0;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+  }
+
+  .country_code_edit {
+    height: 54px;
+    position: absolute;
+    top: 19%;
+    z-index: 9;
+    padding:14px 6px;
+    border-right: 1px solid #e3e3e3;
+  }
+
+  .customer__title p {
+    border-bottom: 1px solid #223263;
+    /* font-family: "Anek Latin"; */
+    font-family: 'Anek Latin', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    color: #000;
+    padding: 1rem;
+  }
+
+  .logout_url {
+    width: 100%;
+    background: #000;
+  }
+
+  .logout_text {
+    color: #fff;
+    font-weight: 600;
+  }
+
+  .logout_url a {
+    display: flex;
+    align-items: center;
+    gap: 6.5px;
+    border-top: 1px solid #838383;
+    /* font-family: "Anek Latin"; */
+    font-family: 'Anek Latin', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(87, 87, 87, 0.74);
+    text-decoration: none;
+    padding: 1rem;
+  }
+
+  .tab_buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .profile_title,
+  .my_orders_title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-left: 23px;
+    height: 60px;
+  }
+
+  .my_orders,
+  .my_orders-list {
+    background: #ffffff;
+    border: 1px solid #cbcbcb;
+    box-shadow: 0 4px 4px #00000026;
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  .my_orders-list {
+    display: none;
+  }
+
+  .tabcontent {
+    margin-top: 0;
+    padding: 0;
+    width: 73vw;
+    margin-left: 45px;
+  }
+
+  .tabs_desktop {
+    position: relative;
+  }
+
+  .profile_title p,
+  .my_orders_title p {
+    /* font-family: "Anek Latin"; */
+    font-family: 'Anek Latin', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #000;
+  }
+
+  #MyProfile_content {
+    background: #ffffff;
+    border: 1px solid #cbcbcb;
+    box-shadow: 0 4px 4px #00000026;
+    border-radius: 10px;
+    width: 100%;
+    padding: 0 0 20px 0;
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid #ebf0ff;
+    border-collapse: collapse;
+  }
+
+  table {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 56px;
+  }
+
+  .table_header {
+    height: 51px;
+    background: #7c7c7c;
+    /* font-family: "Anek Latin"; */
+    font-family: 'Anek Latin', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #000000;
+  }
+
+  .orderRow {
+    height: 55px;
+    /* font-family: "Anek Latin"; */
+    font-family: 'Anek Latin', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #575757;
+  }
+
+  #RowOrder {
+    /* font-family: "Anek Latin"; */
+    font-family: 'Anek Latin', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-decoration-line: underline;
+    color: #223263;
+  }
+
+  .recent_orders-list {
+    display: none;
+  }
+
+  .recent_orders,
+  .recent_orders-list {
+    background: #ffffff;
+    box-shadow: 0 4px 4px #00000026;
+    border-radius: 10px;
+    width: 100%;
+    margin-left: 44px;
+    margin-top: 19px;
+  }
+
+  #profile-svg {
+    margin-right: 8px;
+    margin-bottom: 4px;
+  }
+
+  #tablinks.active {
+    background-color: #7c7c7c;
+  }
+
+  #profile-svg path.active {
+    fill: #000;
+  }
+
+  /* Apply border to the right of active tab */
+  button#tablinks.active svg path {
+    fill: #000;
+  }
+
+  #RowOrder {
+    cursor: pointer;
+  }
+  .order_container {
+    background: #ffffff;
+    border: 1px solid #cbcbcb;
+    box-shadow: 0 4px 4px #00000026;
+    border-radius: 10px;
+    width: 100%;
+    margin-left: 44px;
+    margin-top: 19px;
+  }
+
+  .name_order {
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    color: #223263;
+    margin-left: 26px;
+    margin-top: 27px;
+  }
+
+  .table_header_desktop {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background: #ebf0ff;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .order_name_image,
+  .header_product {
+    width: 40%;
+  }
+
+  .order_name_image {
+    display: flex;
+    gap: 11px;
+    margin-left: 31px;
+    align-items: center;
+  }
+
+  .table_header_desktop p {
+    /* font-family: "Anek Latin"; */
+    font-family: 'Anek Latin', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    color: #000000;
+  }
+
+  .order_body {
+    display: flex;
+    align-items: center;
+  }
+
+  .w-20 {
+    width: 20%;
+  }
+
+  .order_content {
+    padding-left: 24px;
+    padding-right: 25px;
+  }
+
+  .address_container {
+    background: #ffffff;
+    border: 1px solid #cbcbcb;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    margin-left: 44px;
+    margin-top: 0;
+  }
+
+  .address_title h1 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    /* font-family: "Anek Latin"; */
+    font-family: 'Anek Latin', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #000;
+    margin-top: 45px;
+    margin-bottom: 25px;
+    height: 0;
+    padding-bottom: 14px;
+  }
+
+  .address-description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #add_button_desktop {
+    font-style: normal;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #fff;
+    margin-right: 24px;
+    background: #fff;
+    height: 0;
+    background: #000;
+  }
+
+  .description {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #delete_btn {
+    background: none;
+  }
+
+  .add_btn {
+    background: none !important;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  .adress_default {
+    display: flex;
+    justify-content: center;
+    height: 25px;
+    align-items: center;
+    /* font-family: "Anek Latin"; */
+    font-family: 'Anek Latin', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #8d0349;
+    background: #e4ebff;
+    border: 1px solid #cad7ff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    width: 125px;
+  }
+
+  .description p {
+    /* font-family: "Anek Latin"; */
+    font-family: 'Anek Latin', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #364045;
+  }
+
+  #myAddress li:not(:last-child) {
+    border-bottom: 1px solid #949594;
+    width: 99%;
+  }
+
+  .buttons :not(:first-child) {
+    margin-top: 20px;
+  }
+
+  #address_form_new label {
+    /* font-family: "Anek Latin"; */
+    font-family: 'Anek Latin', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: rgba(87, 87, 87, 0.72);
+  }
+
+  .add_address_title h2 {
+    /* font-family: "Anek Latin"; */
+    font-family: 'Anek Latin', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #000;
+    margin: 0;
+  }
+
+  #EditSavebutton {
+    background: #8d0349;
+    border-radius: 5px;
+    text-align: center;
+    /* font-family: "Anek Latin"; */
+    font-family: 'Anek Latin', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.5px;
+    
+    color: #ffffff;
+    margin-top: 44px;
+    margin-bottom: 61px;
+  }
+
+  #AddAddress_desktop {
+    display: none;
+  }
+
+  #AddAddress_desktop {
+    padding: 8px;
+    position: fixed;
+    background: #fff;
+    width: 30%;
+    transform: translate(-50%, -50%);
+    right: 50%;
+    left: 50%;
+    z-index: 99999;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+ 
+  .EditAddress_desktop {
+  padding: 10px;
+  position: fixed;
+  background: #ffffff;
+  width: 30%;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+  #add-address {
+    margin-bottom: 60px;
+    margin-top: 20px;
+  }
+
+  .overlay {
+    background: #00000075;
+    height: 200vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+
+  .order_name_id {
+    margin: 27px 0 0 0;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+
+  .order_date_cancelled p {
+    margin-top: 0;
+    margin-bottom: 39px;
+    /* font-family: "Anek Latin"; */
+    font-family: 'Anek Latin', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    color: #949594;
+  }
+
+  .name_order,
+  .id_order {
+    /* font-family: "Anek Latin"; */
+    font-family: 'Anek Latin', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    color: #223263;
+    margin: 0;
+  }
+
+  .table_titles {
+    display: flex;
+    justify-content: space-between;
+    background: #ebf0ff;
+    border-radius: 5px;
+    height: 51px;
+    align-items: center;
+  }
+
+  .table-desktop {
+    padding: 0 24px;
+  }
+
+  .title_product {
+    width: 40%;
+    margin-left: 15px;
+  }
+
+  .title_total,
+  .title_quantity,
+  .title_varient {
+    width: 20%;
+  }
+
+  .table_titles h2 {
+    margin: 0;
+    /* font-family: "Anek Latin"; */
+    font-family: 'Anek Latin', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: left;
+    letter-spacing: 0.5px;
+    color: #000000;
+  }
+
+  .item_image_title {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    width: 40%;
+    padding-left: 24px;
+    margin: 0;
+  }
+
+  .table_description {
+    display: flex;
+    justify-content: space-around;
+    background: rgba(235, 235, 235, 0.51);
+    border-radius: 5px;
+    margin-top: 9px;
+  }
+
+  .item_image_title {
+    width: 40%;
+  }
+
+  .quantity_details,
+  .varient_details,
+  .total_details {
+    width: 20%;
+  }
+
+  .table_description {
+    /* font-family: "Anek Latin"; */
+    font-family: 'Anek Latin', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 129%;
+    letter-spacing: 0.5px;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: rgba(0, 0, 0, 0.82);
+  }
+
+  #my_order_detail_desktop {
+    display: none !important;
+  }
+
+  .order_table {
+    padding: 0 25px;
+  }
+
+  .product_card-details {
+    display: flex;
+    justify-content: space-between;
+    background: #7c7c7c;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .product-item-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .product-item-card {
+    display: flex;
+  }
+
+  .discount_card,
+  .subtotal_card,
+  .total_price-card,
+  .shipping_card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+}
+
+#ColumnProduct {
+  text-align: left;
+  padding-left: 15px;
+}
+
+.order-detail_container table,
+th,
+td {
+  border: none;
+}
+
+.billing__address {
+  display: flex;
+  width: 100%;
+  gap: 50px;
+}
+
+.customer_billing h2,
+.customer_billing-header {
+  /* font-family: "Anek Latin"; */
+  font-family: 'Anek Latin', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: #223263;
+  margin-top: 30px;
+  margin-bottom: 13px;
+}
+
+#billing_name,
+#shipping_name {
+  /* font-family: "Anek Latin"; */
+  font-family: 'Anek Latin', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.billing__address-card p,
+.shipping__address-card p {
+  /* font-family: "Anek Latin"; */
+  font-family: 'Anek Latin', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #575757;
+  padding-right: 26px;
+}
+
+#main_order_detail_desktop {
+  display: none;
+}
+
+.order-detail_container {
+  background: #ffffff;
+  border: 1px solid #cbcbcb;
+  box-shadow: 0 4px 4px #00000026;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.address_desktop {
+  padding-left: 32px;
+}
+
+.address_title {
+  padding-left: 27px;
+  display: flex;
+  align-items: center;
+  gap: 12.25px;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  /* text-align: center; */
+  letter-spacing: 0.5px;
+  color: #223263;
+}
+
+#order-history,
+#order-history tr,
+#order-history th,
+#order-history td {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-collapse: collapse;
+}
+
+#order-history tbody {
+  background: #ffffff;
+}
+
+.home_page-icon {
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+}
+
+.account_login-name {
+  /* font-family: "Anek Latin"; */
+  font-family: 'Anek Latin', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #000;
+}
+
+#cancel_btn__add-desktop {
+  position: absolute;
+  background: none;
+  top: 3px;
+  right: 40px;
+}
+
+.addresses {
+  border: 1px solid #cbcbcb;
+  box-shadow: 0 4px 4px #00000026;
+  border-radius: 10px;
+  width: 100%;
+  padding:0 1.5rem 0 1.5rem;
+}
+.customer_address{
+  padding:0rem;
+}
+
+.address_title_description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#add-address_desktop {
+  height: 46px;
+  width: 100%;
+}
+
+.adress {
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.EditAddress_desktop {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.EditAddress_desktop {
+  padding: 10px;
+  background: #ffffff;
+  width: 30%;
+  left: 50%;
+  right: 50%;
+  height: 525px;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.Edit_address li:not(:last-child) {
+  border-bottom: 1px solid #949594;
+  padding: 0;
+}
+
+#cancel_btn__edit-desktop {
+  background: none;
+  position:absolute;
+  right:40px;
+}
+
+.address_text p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.order-details {
+  border-collapse: separate;
+  border-spacing: 0 9px;
+}
+
+.EditAddress_desktop label {
+  /* font-family: "Anek Latin"; */
+  font-family: 'Anek Latin', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.EditAddress_desktop input {
+  /* font-family: "Anek Latin"; */
+  font-family: 'Anek Latin', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: #000000;
+}
+
+.phone_add {
+  margin-bottom: 0;
+}
+
+#AddressAddress1New {
+  height: 45px;
+}
+
+.small-fields {
+  padding-top: 0;
+}
+
+#AddressProvinceContainerNew {
+  margin-top: 0;
+}
+
+.track_desktop a {
+  /* font-family: "Anek Latin"; */
+  font-family: 'Anek Latin', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-decoration-line: underline;
+  color: #223263;
+}
+
+.errorMessage{
+  color:red;
+  display:none;
+}
+
+.recent_order_id {
+  margin-bottom:8px;
+}

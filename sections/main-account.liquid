@@ -1,0 +1,492 @@
+{{ 'account.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'account.js' | asset_url }}" defer></script>
+<script src="{{ 'customer.js' | asset_url }}" defer></script>
+
+<div class=" page-width customer account  section-{{ section.id }}-padding">
+  <div class="home_page-icon">
+    <a href="{{ routes.root_url }}"> {% render 'home-icon' %} </a>
+    <p class="account_login-name">>Account</p>
+  </div>
+  <!-- TABS SWITCH FOR MOBILE DESION -->
+  <div class="tabs">         
+    <div class="mobile_tabs">        
+      <button class="tablinks active myprofile" id="tablinks" onclick="openTab(event, 'myprofile')">
+        <svg id="profile-m-svg" class="tabs-svg" width="19" height="20" viewBox="0 0 19 20" fill="#000;" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.5 0.5C4.256 0.5 0 4.756 0 10C0 15.244 4.256 19.5 9.5 19.5C14.744 19.5 19 15.244 19 10C19 4.756 14.744 0.5 9.5 0.5ZM9.5 3.35C11.077 3.35 12.35 4.623 12.35 6.2C12.35 7.777 11.077 9.05 9.5 9.05C7.923 9.05 6.65 7.777 6.65 6.2C6.65 4.623 7.923 3.35 9.5 3.35ZM9.5 16.84C7.125 16.84 5.0255 15.624 3.8 13.781C3.8285 11.8905 7.6 10.855 9.5 10.855C11.3905 10.855 15.1715 11.8905 15.2 13.781C13.9745 15.624 11.875 16.84 9.5 16.84Z" fill="#000" />
+        </svg>
+        <p>My Profile</p>
+      </button>
+      <button class="tablinks myorderstab" id="tablinks" onclick="openTab(event, 'myorders')">
+        <svg class="tabs-svg" id="order-m-svg" width="17" height="18" viewBox="0 0 17 18" fill="#000" xmlns="http://www.w3.org/200 >
+        <g clip-path="url(#clip0_6687_27072)">                                            
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M9.18799 1.08749L15.3698 4.08749C15.6273 4.21167 15.844 4.40311 15.9955 4.64027C16.147 4.87744 16.2274 5.15093 16.2275 5.42999V12.5775C16.2274 12.8566 16.147 13.13 15.9955 13.3672C15.844 13.6044 15.6273 13.7958 15.3698 13.92L9.18799 16.92C8.97328 17.0243 8.73649 17.0786 8.4964 17.0786C8.2563 17.0786 8.01952 17.0243 7.80481 16.92L1.62299 13.92C1.36577 13.7942 1.14989 13.6011 0.999695 13.3626C0.849505 13.1241 0.770982 12.8495 0.772987 12.57V5.42999C0.773139 5.15093 0.853496 4.87744 1.00502 4.64027C1.15655 4.40311 1.37323 4.21167 1.63071 4.08749L7.81253 1.08749C8.02624 0.984422 8.26163 0.930786 8.50026 0.930786C8.73889 0.930786 8.97428 0.984422 9.18799 1.08749V1.08749Z" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M1.02002 4.62L8.50002 8.24999L15.98 4.62" stroke="#8D0349" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M8.50049 17.07V8.25" stroke="#8D0349" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </g>
+        <defs> 
+          <clipPath id="clip0_6687_27072">
+            <rect width="17" height="18" fill="white" />
+          </clipPath>
+        </defs>
+        </svg>
+        <p>My Orders</p>
+      </button>
+      <button class="tablinks" id="tablinks" onclick="openTab(event, 'address')">
+        <svg class="tabs-svg" id="address-m-svg" width="14" height="15" viewBox="0 0 14 15" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.25 7.25V2.75L7 0.5L4.75 2.75V4.25H0.25V14.75H13.75V7.25H9.25ZM3.25 13.25H1.75V11.75H3.25V13.25ZM3.25 10.25H1.75V8.75H3.25V10.25ZM3.25 7.25H1.75V5.75H3.25V7.25ZM7.75 13.25H6.25V11.75H7.75V13.25ZM7.75 10.25H6.25V8.75H7.75V10.25ZM7.75 7.25H6.25V5.75H7.75V7.25ZM7.75 4.25H6.25V2.75H7.75V4.25ZM12.25 13.25H10.75V11.75H12.25V13.25ZM12.25 10.25H10.75V8.75H12.25V10.25Z" fill="#000" />
+        </svg>
+        <p>Manage Address</p>
+      </button>
+    </div>
+    <div id="mobile_tabs_content">
+      <div id="myprofile" class="tabcontent">
+        <!-- Content for My Profile tab goes here for mobile -->
+        <div class="profile_container_mobile">
+          <div>
+            <p class="customer_name-mobile">Hi, {{ customer.first_name }}</p>
+          </div>
+          <div class="profile__name">
+            <p class="customer_name-tittle">Name:</p>
+            <div class="customer_name-field">
+              <p class="customer__field-name">{{ customer.first_name }}</p>
+            </div>
+          </div>
+          <div class="profile__email">
+            <p class="customer_email-tittle">Email:</p>
+            <div class="customer_name-field">
+              <p class="customer__field-mail">{{ customer.email }}</p>
+            </div>
+          </div>
+          <div class="default_address-card">
+            {% assign default_address = '' %} 
+            {%- for address in customer.addresses -%} 
+            {%- if address == customer.default_address -%} 
+            <h2 class="customer_default_title">Default Address:</h2>
+            {% assign default_address = address %} 
+            {%- endif -%}
+            {% endfor %}          
+            <div class="default_card-cotent">
+              <div class="default_card-wrapper">
+              <span class="customer-name f-w-blod">{{ default_address.name }}</span>
+             <div class="edit_default-address">Edit</div>
+              </div>
+              {{ default_address | format_address | remove: default_address.name | replace_first: '<br>', '' }}
+              <p class="customer_phone">{{ default_address.phone }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="logout_url_mobile">
+          <a href="{{ routes.account_logout_url }}" class="logout__link_mobile">
+            <div class="logout_card-mobile">
+              <svg width="20" height="18" viewBox="0 0 16 15" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.75 3.75L10.6925 4.8075L12.6275 6.75H5V8.25H12.6275L10.6925 10.185L11.75 11.25L15.5 7.5L11.75 3.75ZM2 2.25H8V0.75H2C1.175 0.75 0.5 1.425 0.5 2.25V12.75C0.5 13.575 1.175 14.25 2 14.25H8V12.75H2V2.25Z" fill="#fff" />
+              </svg>
+              <p class="logout_text">{{ 'customer.log_out' | t }}</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div id="myorders" class="tabcontent">
+        <div class="recent_orders_mobile" id="my_orders_container">
+          {%- for order in customer.orders limit: 8-%} 
+          <div class="my_orders_container">
+            <div class="recent_order_info">
+              <div class="recent_order_id">
+                <p class="my_order_text">Order Id</p>
+                <span class="myorder_detail_opener__mobile recent_order_text_span" data-orderName="{{ order.name }}" href="{{ order.customer_url }}" aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}">
+                {{ order.name }}
+                </span>
+              </div>
+              <div class="order_details">
+                <div>
+                  <p class="my_order_text"> Date <span class="recent_order_span"> {{order.created_at | time_tag: format: 'date'}} </span>
+                  </p>
+                </div>
+                <div class="payment_status">
+                  <p class="my_order_text"> Payment Status <span class="recent_order_span">{{ order.financial_status_label }}</span>
+                  </p>
+                </div>
+                <div class="total">
+                  <p class="my_order_text"> Total <span class="recent_order_span">{{ order.total_net_amount | money_with_currency }}</span>
+                  </p>
+                </div>
+                <div class="order_status">
+                  <p class="my_order_text track">Order Status</p>
+                  <span class="track_span">
+                 {%- assign order_date = order.created_at | time_tag: format: 'date' -%}
+                 {% assign date = "May 01,2023" | time_tag: format: 'date' %}
+                  {% if order_date < date %}
+                    <p>Deliverd</p>
+                  {% else %}
+                    {% if order.cancelled %} 
+                    <p class="tracking-status">Cancelled</p>
+                    {% else %} 
+                    {% if order.fulfillment_status_label == 'Fulfilled' %} 
+                    {% for line_item in order.line_items %} 
+                    {% if forloop.first %}
+                    {% if order.financial_status_label contains 'Partially' %}
+                      <a href=" {{ order.customer_url }}" target="_self" aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}"> Track Order </a> 
+                    {% else %} 
+                      <a href="{{line_item.fulfillment.tracking_url}}" target="_blank" aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}"> Track Order </a> 
+                    {% endif %} 
+                    {% endif %}
+                    {% endfor %} 
+                    {% elsif order.fulfillment_status_label == 'Unfulfilled' -%} 
+                    <p class="tracking-status">Order Processing</p>
+                    {%- else -%} 
+                    {{- order.fulfillment_status_label -}} 
+                    {%- endif %} 
+                    {% endif %} 
+                   {% endif %}
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        <!-- ORDERS PAGE FOR MOBILE -->
+        <div class="order__page_mobile" id="my_order_detail_mobile">
+          {% for order in customer.orders %} 
+          <div class="my-orderDetail" data-order-name-matcher="{{ order.name }}"> 
+          {% render 'my-orders-snippet_mobile', order: order %} </div>
+          {% endfor %} 
+        </div>
+        <div id="viewAllMyOrders"></div>
+      </div>
+      <div id="address" class="tabcontent">
+        {% render 'manage-address-snippet-mobile' %}
+      </div>
+    </div>
+  </div>
+  <!-- TABS SWITCH FOR MOBILE DESION -->
+  <div class="tabs_desktop">
+    <div class="tab">
+      <div class="customer__title">
+        <p class="customer_name">Hi, {{ customer.first_name }}</p>
+      </div>
+      <div class="tab_buttons">
+        <button class="tablinks MyProfile" id="tablinks" onclick="openTab(event, 'MyProfile')">
+          <svg id="profile-svg" width="19" height="20" viewBox="0 0 19 20" fill="#838383" xmlns="http://www.w3.org/2000/svg" style="display: block;">
+            <path d="M9.5 0.5C4.256 0.5 0 4.756 0 10C0 15.244 4.256 19.5 9.5 19.5C14.744 19.5 19 15.244 19 10C19 4.756 14.744 0.5 9.5 0.5ZM9.5 3.35C11.077 3.35 12.35 4.623 12.35 6.2C12.35 7.777 11.077 9.05 9.5 9.05C7.923 9.05 6.65 7.777 6.65 6.2C6.65 4.623 7.923 3.35 9.5 3.35ZM9.5 16.84C7.125 16.84 5.0255 15.624 3.8 13.781C3.8285 11.8905 7.6 10.855 9.5 10.855C11.3905 10.855 15.1715 11.8905 15.2 13.781C13.9745 15.624 11.875 16.84 9.5 16.84Z"></path>
+          </svg>
+          My Profile 
+        </button>
+        <button class="tablinks MyOrdersDeskTab" id="tablinks" onclick="openTab(event, 'MyOrders')">
+          <svg id="profile-svg" width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: block;">
+            <g clip-path="url(#clip0_6658_28649)">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M8.64758 1.52709L14.4658 4.36042C14.7081 4.47771 14.912 4.65851 15.0546 4.88249C15.1973 5.10648 15.2729 5.36478 15.273 5.62834V12.3788C15.2729 12.6423 15.1973 12.9006 15.0546 13.1246C14.912 13.3486 14.7081 13.5294 14.4658 13.6467L8.64758 16.48C8.4455 16.5785 8.22263 16.6298 7.99667 16.6298C7.7707 16.6298 7.54784 16.5785 7.34576 16.48L1.52757 13.6467C1.28549 13.5279 1.0823 13.3455 0.940947 13.1203C0.799591 12.895 0.725688 12.6357 0.727574 12.3717V5.62834C0.727718 5.36478 0.803347 5.10648 0.945959 4.88249C1.08857 4.65851 1.29251 4.47771 1.53485 4.36042L7.35303 1.52709C7.55416 1.42975 7.77571 1.37909 8.0003 1.37909C8.2249 1.37909 8.44644 1.42975 8.64758 1.52709V1.52709Z" stroke="#838383" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M0.959961 4.86334L7.99996 8.29168L15.04 4.86334" stroke="#838383" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M8 16.6217V8.29169" stroke="#838383" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="#838383"></path>
+            </g>
+            <defs>
+              <clipPath id="clip0_6658_28649">
+                <rect width="16" height="17" fill="white" transform="translate(0 0.5)"></rect>
+              </clipPath>
+            </defs>
+          </svg>
+          My Orders 
+        </button>
+        <button class="tablinks manageaddress" id="tablinks" onclick="openTab(event, 'ManageAddress')">
+          <svg id="profile-svg" width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: block;">
+            <path d="M9.25 7.25V2.75L7 0.5L4.75 2.75V4.25H0.25V14.75H13.75V7.25H9.25ZM3.25 13.25H1.75V11.75H3.25V13.25ZM3.25 10.25H1.75V8.75H3.25V10.25ZM3.25 7.25H1.75V5.75H3.25V7.25ZM7.75 13.25H6.25V11.75H7.75V13.25ZM7.75 10.25H6.25V8.75H7.75V10.25ZM7.75 7.25H6.25V5.75H7.75V7.25ZM7.75 4.25H6.25V2.75H7.75V4.25ZM12.25 13.25H10.75V11.75H12.25V13.25ZM12.25 10.25H10.75V8.75H12.25V10.25Z" fill="#838383"></path>
+          </svg>
+          Manage Address 
+        </button>
+      </div>
+      <div class="logout_url">
+        <a href="{{ routes.account_logout_url }}" class="logout__link">
+          <svg width="20" height="18" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.75 3.75L10.6925 4.8075L12.6275 6.75H5V8.25H12.6275L10.6925 10.185L11.75 11.25L15.5 7.5L11.75 3.75ZM2 2.25H8V0.75H2C1.175 0.75 0.5 1.425 0.5 2.25V12.75C0.5 13.575 1.175 14.25 2 14.25H8V12.75H2V2.25Z" fill="#fff" />
+          </svg>
+          <p class="logout_text">{{ 'customer.log_out' | t }}</p>
+        </a>
+      </div>
+    </div>
+    <div id="MyProfile" class="tabcontent">
+      <div class="MyProfile_content" id="MyProfile_content">
+        <div class="profile_description">
+          <div class="profile_title">
+            <svg width="19" height="20" viewBox="0 0 19 20" fill="#8D0349;" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.5 0.5C4.256 0.5 0 4.756 0 10C0 15.244 4.256 19.5 9.5 19.5C14.744 19.5 19 15.244 19 10C19 4.756 14.744 0.5 9.5 0.5ZM9.5 3.35C11.077 3.35 12.35 4.623 12.35 6.2C12.35 7.777 11.077 9.05 9.5 9.05C7.923 9.05 6.65 7.777 6.65 6.2C6.65 4.623 7.923 3.35 9.5 3.35ZM9.5 16.84C7.125 16.84 5.0255 15.624 3.8 13.781C3.8285 11.8905 7.6 10.855 9.5 10.855C11.3905 10.855 15.1715 11.8905 15.2 13.781C13.9745 15.624 11.875 16.84 9.5 16.84Z" fill="#223263" />
+            </svg>
+            <p>My Profile</p>
+          </div>
+        </div>
+        <div class="profile__name">
+          <p class="customer_name-tittle">Name:</p>
+          <div class="customer_name-field">
+            <p class="customer__field-name">{{ customer.first_name }}</p>
+          </div>
+        </div>
+        <div class="profile__email">
+          <p class="customer_email-tittle">Email:</p>
+          <div class="customer_name-field">
+            <p class="customer__field-mail">{{ customer.email }}</p>
+          </div>
+        </div>
+        <div class="default_address-card">
+          {% assign default_address = '' %} 
+          {%- for address in customer.addresses -%} 
+          {%- if address == customer.default_address -%} 
+          <h2 class="customer_default_title">Default Address:</h2>
+          {% assign default_address = address %} 
+          {%- endif -%} 
+          {% endfor %} 
+          <div class="default_card-cotent">
+             <div class="default_card-wrapper">
+              <span class="customer-name f-w-blod">{{ default_address.name }}</span>
+                <div class="edit_default-address">Edit</div>
+              </div>
+            {{ default_address | format_address | remove: default_address.name | replace_first: '<br>', '' }}
+            <p class="customer_phone">{{ default_address.phone }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="recent_orders-list" id="recent_orders-list">
+        <div class="my_orders_title">
+          <svg width="19" height="20" viewBox="0 0 28 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_6658_28822)">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M15.1325 1.81257L25.3143 6.81256C25.7384 7.01954 26.0953 7.3386 26.3449 7.73387C26.5945 8.12915 26.7268 8.58496 26.7271 9.05006V20.9626C26.7268 21.4277 26.5945 21.8835 26.3449 22.2788C26.0953 22.674 25.7384 22.9931 25.3143 23.2001L15.1325 28.2001C14.7789 28.3739 14.3889 28.4644 13.9934 28.4644C13.598 28.4644 13.208 28.3739 12.8543 28.2001L2.67252 23.2001C2.24887 22.9904 1.8933 22.6687 1.64593 22.2711C1.39855 21.8735 1.26922 21.416 1.27252 20.9501V9.05006C1.27277 8.58496 1.40513 8.12915 1.6547 7.73387C1.90427 7.3386 2.26116 7.01954 2.68525 6.81256L12.8671 1.81257C13.2191 1.64078 13.6068 1.55139 13.9998 1.55139C14.3928 1.55139 14.7805 1.64078 15.1325 1.81257V1.81257Z" stroke="#223263" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M1.67969 7.70007L13.9997 13.7501L26.3197 7.70007" stroke="#223263" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M14 28.4501V13.7501" stroke="#223263" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </g>
+            <defs>
+              <clipPath id="clip0_6658_28822">
+                <rect width="28" height="30" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <p>Recent Orders</p>
+        </div>
+        <div class="my_orders__table">
+          {% paginate customer.orders by 20 %} 
+          {%- if customer.orders.size > 0 -%} 
+          <table role="table" class="order-history" id="order-history" border="0">
+            <caption class="visually-hidden">
+              {{ 'customer.orders.title' | t }}
+            </caption>
+            <thead role="rowgroup" class="table_header">
+              <tr role="row">
+                <th class="f-w-500" id="ColumnOrder" scope="col" role="columnheader">
+                  {{ 'customer.orders.order_number' | t }}
+                </th>
+                <th class="f-w-500" id="ColumnDate" scope="col" role="columnheader">
+                  {{ 'customer.orders.date' | t }}
+                </th>
+                <th class="f-w-500" id="ColumnPayment" scope="col" role="columnheader">
+                  {{ 'customer.orders.payment_status' | t }}
+                </th>
+                <th class="f-w-500" id="ColumnTotal" scope="col" role="columnheader">
+                  {{ 'customer.orders.total' | t }}
+                </th>
+                <th class="f-w-500" id="ColumnFulfillment" scope="col" role="columnheader">
+                  <p>Order Status</p>
+                </th>
+              </tr>
+            </thead>
+            <tbody class="table_body" role="rowgroup">
+              {%- for order in customer.orders -%} 
+              {% assign orderNames = orderNames | append: ',' | append: order.name %} 
+              <tr role="row" class="orderRow">
+                <td id="RowOrder" role="cell" headers="ColumnOrder" data-label="{{ 'customer.orders.order_number' | t }}">
+                  <span class="order_detail_opener" data-orderName="{{ order.name }}" href="{{ order.customer_url }}" aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}">
+                  {{ order.name }}
+                  </span>
+                </td>
+                <td headers="RowOrder ColumnDate" role="cell" data-label="{{ 'customer.orders.date' | t }}">
+                 {{order.created_at | time_tag: format: 'date'}}
+                </td>
+                <td headers="RowOrder ColumnPayment" role="cell" data-label="{{ 'customer.orders.payment_status' | t }}">
+                  {{ order.financial_status_label }}
+                </td>
+                <td headers="RowOrder ColumnTotal" role="cell" data-label="{{ 'customer.orders.total' | t }}">
+                  {{ order.total_net_amount | money_with_currency }}
+                </td>
+              </tr>
+              {%- endfor -%} 
+            </tbody>
+          </table>
+          {% endif %} 
+          {% endpaginate %} 
+        </div>
+      </div>
+    </div>
+    <div id="MyOrders" class="tabcontent">
+      <div class="my_orders">
+        <div class="my_orders_title">
+          <svg width="19" height="20" viewBox="0 0 28 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_6658_28822)">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M15.1325 1.81257L25.3143 6.81256C25.7384 7.01954 26.0953 7.3386 26.3449 7.73387C26.5945 8.12915 26.7268 8.58496 26.7271 9.05006V20.9626C26.7268 21.4277 26.5945 21.8835 26.3449 22.2788C26.0953 22.674 25.7384 22.9931 25.3143 23.2001L15.1325 28.2001C14.7789 28.3739 14.3889 28.4644 13.9934 28.4644C13.598 28.4644 13.208 28.3739 12.8543 28.2001L2.67252 23.2001C2.24887 22.9904 1.8933 22.6687 1.64593 22.2711C1.39855 21.8735 1.26922 21.416 1.27252 20.9501V9.05006C1.27277 8.58496 1.40513 8.12915 1.6547 7.73387C1.90427 7.3386 2.26116 7.01954 2.68525 6.81256L12.8671 1.81257C13.2191 1.64078 13.6068 1.55139 13.9998 1.55139C14.3928 1.55139 14.7805 1.64078 15.1325 1.81257V1.81257Z" stroke="#223263" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M1.67969 7.70007L13.9997 13.7501L26.3197 7.70007" stroke="#223263" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M14 28.4501V13.7501" stroke="#223263" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </g>
+            <defs>
+              <clipPath id="clip0_6658_28822">
+                <rect width="28" height="30" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <p>My Orders</p>
+        </div>
+        <div class="my_orders__table">
+          {% paginate customer.orders by 20 %} 
+          {%- if customer.orders.size > 0 -%} 
+          <table role="table" class="order-history" id="order-history" border="0">
+            <caption class="visually-hidden">
+              {{ 'customer.orders.title' | t }}
+            </caption>
+            <thead role="rowgroup" class="table_header">
+              <tr role="row">
+                <th class="f-w-500" id="ColumnOrder" scope="col" role="columnheader">
+                  {{ 'customer.orders.order_number' | t }}
+                </th>
+                <th class="f-w-500" id="ColumnDate" scope="col" role="columnheader">
+                  {{ 'customer.orders.date' | t }}
+                </th>
+                <th class="f-w-500" id="ColumnPayment" scope="col" role="columnheader">
+                  {{ 'customer.orders.payment_status' | t }}
+                </th>
+                <th class="f-w-500" id="ColumnTotal" scope="col" role="columnheader">
+                  {{ 'customer.orders.total' | t }}
+                </th>
+                <th class="f-w-500" id="ColumnFulfillment" scope="col" role="columnheader">
+                  <p>Order Status</p>
+                </th>
+              </tr>
+            </thead>
+            <tbody class="table_body" role="rowgroup">
+              {%- for order in customer.orders limit: 9 -%} {% assign orderNames = orderNames | append: ',' | append: order.name %} 
+              <tr role="row" class="orderRow">
+                <td id="RowOrder" role="cell" headers="ColumnOrder" data-label="{{ 'customer.orders.order_number' | t }}">
+                  <span class="order_detail_opener" data-orderName="{{ order.name }}" href="{{ order.customer_url }}" aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}">
+                  {{ order.name }}
+                  </span>
+                </td>
+                <td headers="RowOrder ColumnDate" role="cell" data-label="{{ 'customer.orders.date' | t }}">
+                 {{ order.created_at | time_tag: format: 'date'}}
+                </td>
+                <td headers="RowOrder ColumnPayment" role="cell" data-label="{{ 'customer.orders.payment_status' | t }}">
+                  {{ order.financial_status_label }}
+                </td>
+                <td headers="RowOrder ColumnTotal" role="cell" data-label="{{ 'customer.orders.total' | t }}">
+                  {{ order.total_net_amount | money_with_currency }}
+                </td>
+                <td headers="RowOrder ColumnFulfillment" role="cell" data-label="{{ 'customer.orders.tracking_url' | t }}" class="track_desktop">
+                {%- assign order_date = order.created_at | time_tag: format: 'date' -%}
+                 {% assign date = "May 01,2023" | time_tag: format: 'date' %}
+                  {% if order_date < date %}
+                    <p>Deliverd</p>
+                  {% else %}
+                  {% if order.cancelled %} 
+                  <p class="tracking-status">Cancelled</p>
+                  {% else %} 
+                  {% if order.fulfillment_status_label == 'Fulfilled' %} 
+                  {% for line_item in order.line_items %} 
+                  {% if forloop.first %}
+                    {% if order.financial_status_label contains 'Partially' %}
+                    <a href=" {{ order.customer_url }}" target="_self" aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}"> Track Order </a> 
+                    {% else %} 
+                    <a href="{{line_item.fulfillment.tracking_url}}" target="_blank" aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}"> Track Order </a> 
+                    {% endif %} 
+                    {% endif %}
+                    {% endfor %} 
+                  {% elsif order.fulfillment_status_label == 'Unfulfilled' -%} 
+                  <p class="tracking-status">Order Processing</p>
+                  {%- else -%} {{- order.fulfillment_status_label -}} 
+                  {%- endif %} 
+                  {% endif %} 
+                  {% endif %}
+                </td>
+              </tr>
+              {%- endfor -%} 
+            </tbody>
+          </table>
+          {% endif %} 
+          {% endpaginate %} 
+        </div>
+      </div>
+      <div class="my_orders-list">
+        <div class="my_orders_title">
+          <svg width="28" height="30" viewBox="0 0 28 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_6658_28822)">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M15.1325 1.81257L25.3143 6.81256C25.7384 7.01954 26.0953 7.3386 26.3449 7.73387C26.5945 8.12915 26.7268 8.58496 26.7271 9.05006V20.9626C26.7268 21.4277 26.5945 21.8835 26.3449 22.2788C26.0953 22.674 25.7384 22.9931 25.3143 23.2001L15.1325 28.2001C14.7789 28.3739 14.3889 28.4644 13.9934 28.4644C13.598 28.4644 13.208 28.3739 12.8543 28.2001L2.67252 23.2001C2.24887 22.9904 1.8933 22.6687 1.64593 22.2711C1.39855 21.8735 1.26922 21.416 1.27252 20.9501V9.05006C1.27277 8.58496 1.40513 8.12915 1.6547 7.73387C1.90427 7.3386 2.26116 7.01954 2.68525 6.81256L12.8671 1.81257C13.2191 1.64078 13.6068 1.55139 13.9998 1.55139C14.3928 1.55139 14.7805 1.64078 15.1325 1.81257V1.81257Z" stroke="#223263" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M1.67969 7.70007L13.9997 13.7501L26.3197 7.70007" stroke="#223263" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M14 28.4501V13.7501" stroke="#223263" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </g>
+            <defs>
+              <clipPath id="clip0_6658_28822">
+                <rect width="28" height="30" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <p>My Orders</p>
+        </div>
+      </div>
+      <div class="order__page_dektop" id="main_order_detail_desktop">
+        {% for order in customer.orders %} 
+        <div class="my-orderDetail" data-order-name-matcher="{{ order.name }}"> 
+          {% render 'my-orders-snippet_desktop', order: order %} 
+        </div>
+        {% endfor %} 
+      </div>
+      <div id="MyordersDesktop"></div>
+    </div>
+    <div id="ManageAddress" class="tabcontent"> 
+      {% render 'manage-address-snippet-desktop' %} 
+    </div>
+  </div>
+</div>      
+<style>
+.section-{{ section.id }}-padding {
+  padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+  padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+}
+@media screen and (min-width: 750px) {
+.section-{{ section.id }}-padding {
+  padding-top: {{ section.settings.padding_top }}px;
+  padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+}
+</style>   
+<script>
+    if (window.innerWidth>989) {
+     document.getElementById('address').remove();
+  }
+  window.onload = () => {
+    typeof CustomerAddresses !== 'undefined' && new CustomerAddresses();
+  };
+</script>
+
+{% schema %}
+{
+  "name": "t:sections.main-account.name",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ]
+}
+{% endschema %}
+
