@@ -87,6 +87,27 @@
   border-bottom-left-radius: 0;
 }
 
+.card-percentage-badge {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+}
+.card-percentage-badge span {
+  border-radius: var(--badge-corner-radius);
+  display: inline-block;
+  font-size: 10px;
+  letter-spacing: .1rem;
+  line-height: 1;
+  padding: 5px;
+  text-align: center;
+  background-color: transparent;
+  color: #0a0a0a;
+  border: 1px solid #0a0a0a;
+  background: #f7f7f7;
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  backdrop-filter: saturate(180%) blur(10px);
+}
+
 .card--standard.card--text {
   background-color: transparent;
 }
@@ -149,6 +170,10 @@
 @media screen and (min-width: 769px) {
   .card__content{
     padding: 15px 15px 15px 0;
+  }
+  .card-percentage-badge span {
+    padding: 0.5rem 1.3rem 0.6rem;
+    font-size: 14px;
   }
 }
 
