@@ -2425,8 +2425,8 @@ input[type="checkbox"] {
     text-align: center;
   }
   .header__heading {
-    padding-top: 26px;
-  }
+      padding-top: 26px;
+    }
 }
 
 /* Header icons */
@@ -3243,4 +3243,10 @@ input.remove-zero {
 
 .product-off-text{
   margin-bottom:10px;
+}
+body.gradient.searchtap .header-wrapper {
+    background-color: black;
+}
+.list-social {
+  gap:20px;
 }

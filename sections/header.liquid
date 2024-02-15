@@ -76,8 +76,14 @@ transform: translateZ(10px);
 </svg>
 
 
- {% if template == 'index' %}
+ 
   {% style %}
+   
+ .header__background {
+background: black;
+}
+   
+    {% if template contains 'index' %}
  .header-wrapper {
 margin-bottom: -316px;
 background: transparent;
@@ -89,7 +95,7 @@ background: transparent;
 }
   .header-wrapper {
     margin-bottom: -316px;
-    background: transparent;
+    background: transparent
 }
   }
 .header__menu-item,
@@ -126,18 +132,20 @@ header-menu details:open {
   position: absolute;
   width:100%;
 } 
-  .header.header--top-center{
-  background:unset;
+  .header-wrapper {
+  background:tranparent!important;
 }
-  .header.header--top-center..new-class{
+  .header.header--top-center.new-class{
     background:black;
   }
 }
-    {% endstyle %} 
-{% endif %}  
+    {% endif %} 
+{% endstyle %} 
+
+     
 
       
-<{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
+<{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="header-wrapper  color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
 
   <header class="header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} page-width{% if section.settings.menu != blank %} header--has-menu{% endif %}">
     {%- if section.settings.menu != blank -%}
@@ -696,6 +704,7 @@ header-menu details:open {
       window.addEventListener('scroll', this.onScrollHandler, false);
 
       this.createObserver();
+      this.addingClass();
     }
 
     disconnectedCallback() {
@@ -712,6 +721,10 @@ header-menu details:open {
       observer.observe(this.header);
     }
 
+
+    addingClass() {
+      const headerClass = document.querySelector('header-wrapper').classList.toggle('header__background');
+    }
     onScroll() {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
@@ -1010,20 +1023,29 @@ header-menu details:open {
     ]
 }
 {% endschema %}
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  window.addEventListener('scroll', function() {
-    // Check if the user has scrolled, you can adjust the scroll position as needed
+  var header = document.querySelector('sticky-header header.header');
+
+  function handleScroll() {
     if (window.scrollY > 250) {
-      // Add the new classes to the specified selectors
-      document.querySelector('sticky-header header.header').classList.add('sticky__header');
-      setTimeout(()=>{
-        document.querySelector('sticky-header header.header').classList.add('new-class');
-      },100)
+      header.classList.add('sticky__header', 'new-class');
     } else {
-      // Remove the new classes if not scrolled enough
-      document.querySelector('sticky-header header.header').classList.remove( 'sticky__header', 'new-class');
+      header.classList.remove('sticky__header', 'new-class');
     }
+  }
+
+  var isScrolling;
+  window.addEventListener('scroll', function() {
+    // Clear the timeout while the user is still scrolling
+    clearTimeout(isScrolling);
+
+    // Set a timeout to run after scrolling has stopped
+    isScrolling = setTimeout(function() {
+      handleScroll();
+    }, 0);
   });
 });
 </script>
+
