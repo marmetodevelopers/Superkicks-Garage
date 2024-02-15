@@ -310,11 +310,8 @@ details.mega[open] {
   }
   
   #menu-drawer {
-    height: 100vh;
+    height: 100dvh;
   }
 }
-/* svg[style*="display:block"] + .header-wrapper {
-    background-color: black;
-} */
 
 
