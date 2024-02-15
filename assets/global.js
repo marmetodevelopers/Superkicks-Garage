@@ -35,41 +35,6 @@ closeBTN.addEventListener('click',() =>{
   }
  })
 
-//mega menu open and close on hover
-// document.querySelectorAll(".mega-menu").forEach((element) => {
-//   element.addEventListener("mouseover",function(event){
-//     // console.log(event.srcElement);
-//     document.querySelectorAll(".mega-menu").forEach((element) => {
-//      element.removeAttribute("open");
-//     });
-//     let currentElement = event.srcElement;
-//     let details = currentElement.closest(".mega-menu");
-//     details.setAttribute("open"," ");
-//     // console.log(currentElement.closest(".mega-menu"));
-// });
-// });
-
-// document.querySelectorAll(".mega-menu__content").forEach((element) => {
-//   element.addEventListener("mouseout",function(event){
-//     // console.log(event.srcElement);
-//     let currentElement = event.srcElement;
-//     let details = currentElement.closest(".mega-menu");
-//     details.removeAttribute("open");
-//     // console.log(currentElement.closest(".mega-menu"));
-// });
-// });
-// document.querySelectorAll(".header__menu-item.link--text").forEach((element) => {
-//   element.addEventListener("mouseover",function(event){
-//     document.querySelectorAll(".mega-menu").forEach((element) => {
-//      element.removeAttribute("open");
-//     });
-// });
-// });
-
-
-
-
-
 // Select all ".mega-menu" elements
 document.querySelectorAll(".mega-menu").forEach((element) => {
   // Add "mouseover" event listener to ".mega-menu" elements
