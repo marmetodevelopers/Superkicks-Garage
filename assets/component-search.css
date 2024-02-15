@@ -7,6 +7,9 @@
   font-size: 14px;
   font-family: inherit;
 }
+.template-search__search .search__input.field__input {
+  color: #5e5c5c;
+}
 .search-modal__content .field__label {
   color: #fff;
   top: 50%;
