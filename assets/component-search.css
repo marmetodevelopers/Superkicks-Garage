@@ -9,6 +9,7 @@
 }
 .template-search__search .search__input.field__input {
   color: #5e5c5c;
+  padding: 10px;
 }
 .search-modal__content .field__label {
   color: #fff;
