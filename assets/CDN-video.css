@@ -6,3 +6,8 @@
 .CDN-video section {
   position: relative;
 }
+@media screen and (max-width: 567px){
+  .video-section__container video {
+    height: 85vh;
+  }
+}

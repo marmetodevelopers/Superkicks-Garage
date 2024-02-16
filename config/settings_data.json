@@ -334,11 +334,6 @@
           "color_scheme": "background-1"
         }
       },
-      "searchtap": {
-        "type": "searchtap",
-        "settings": {
-        }
-      },
       "single--logo": {
         "type": "single--logo",
         "settings": {

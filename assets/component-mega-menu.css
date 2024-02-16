@@ -11,8 +11,8 @@
   overflow-y: auto;
   position: absolute;
   right: 0;
-  top: 100%;
-  z-index: -1;
+  top: 90%;
+  z-index: 0;
 }
 
 .shopify-section-header-sticky .mega-menu__content {
@@ -230,8 +230,9 @@ header-menu summary.menu__item__list::after {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: white;
+  border-bottom:1.5px solid white;
   transition: width 0.4s ease;
+  z-index:1
 }
 
 header-menu details[open] summary.menu__item__list::after {
@@ -309,11 +310,8 @@ details.mega[open] {
   }
   
   #menu-drawer {
-    height: 100vh;
+    height: 100dvh;
   }
 }
-/* svg[style*="display:block"] + .header-wrapper {
-    background-color: black;
-} */
 
 

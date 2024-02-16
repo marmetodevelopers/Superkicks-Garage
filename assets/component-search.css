@@ -1,7 +1,27 @@
 .search__input.field__input {
-  padding: 0 5px;
+  padding: 10px 5px 4px 15px;
   height: 3rem;
   width: 16rem;
+  background: transparent;
+  color: #fff;
+  font-size: 14px;
+  font-family: inherit;
+}
+.template-search__search .search__input.field__input {
+  color: #5e5c5c;
+  padding: 10px;
+}
+.search-modal__content .field__label {
+  color: #fff;
+  top: 50%;
+  transform: translate(0px, -50%);
+  font-size: 13px;
+  font-family: inherit;
+}
+.search-modal__form .search__button .icon {
+  color: #5e5c5c;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 .header__icons .field:after{

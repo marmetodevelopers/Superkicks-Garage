@@ -35,53 +35,56 @@ closeBTN.addEventListener('click',() =>{
   }
  })
 
-//mega menu open and close on hover
-// document.querySelectorAll(".mega-menu").forEach((element) => {
-//   element.addEventListener("mouseover",function(event){
-//     // console.log(event.srcElement);
-//     document.querySelectorAll(".mega-menu").forEach((element) => {
-//      element.removeAttribute("open");
-//     });
-//     let currentElement = event.srcElement;
-//     let details = currentElement.closest(".mega-menu");
-//     details.setAttribute("open"," ");
-//     // console.log(currentElement.closest(".mega-menu"));
-// });
-// });
+// Select all ".mega-menu" elements
 document.querySelectorAll(".mega-menu").forEach((element) => {
+  // Add "mouseover" event listener to ".mega-menu" elements
   element.addEventListener("mouseover", function (event) {
+    // Remove "open" attribute from all ".mega-menu" elements
     document.querySelectorAll(".mega-menu").forEach((element) => {
       element.removeAttribute("open");
     });
+
+    // Set "open" attribute to the closest ".mega-menu" element
     let currentElement = event.srcElement;
     let details = currentElement.closest(".mega-menu");
     details.setAttribute("open", " ");
   });
 
+  // Add "mouseout" event listener to ".mega-menu" elements
   element.addEventListener("mouseout", function (event) {
+    // Check if the mouse is not over ".mega-menu__content"
+    if (!event.relatedTarget.classList.contains("mega-menu__content")) {
+      // Remove "open" attribute from the closest ".mega-menu" element
+      let currentElement = event.srcElement;
+      let details = currentElement.closest(".mega-menu");
+      details.removeAttribute("open");
+    }
+  });
+});
+
+// Select all ".mega-menu__content" elements
+document.querySelectorAll(".mega-menu__content").forEach((element) => {
+  // Add "mouseout" event listener to ".mega-menu__content" elements
+  element.addEventListener("mouseout", function (event) {
+    // Remove "open" attribute from the closest ".mega-menu" element
     let currentElement = event.srcElement;
     let details = currentElement.closest(".mega-menu");
     details.removeAttribute("open");
   });
 });
 
-
-document.querySelectorAll(".mega-menu__content").forEach((element) => {
-  element.addEventListener("mouseout",function(event){
-    // console.log(event.srcElement);
-    let currentElement = event.srcElement;
-    let details = currentElement.closest(".mega-menu");
-    details.removeAttribute("open");
-    // console.log(currentElement.closest(".mega-menu"));
-});
-});
+// Select all ".header__menu-item.link--text" elements
 document.querySelectorAll(".header__menu-item.link--text").forEach((element) => {
-  element.addEventListener("mouseover",function(event){
+  // Add "mouseover" event listener to ".header__menu-item.link--text" elements
+  element.addEventListener("mouseover", function (event) {
+    // Remove "open" attribute from all ".mega-menu" elements
     document.querySelectorAll(".mega-menu").forEach((element) => {
-     element.removeAttribute("open");
+      element.removeAttribute("open");
     });
+  });
 });
-});
+
+
 const trapFocusHandlers = {};
 
 function trapFocus(container, elementToFocus = container) {

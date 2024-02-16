@@ -36,7 +36,20 @@
       "previous": "Previous page"
     },
     "search": {
-      "search": "Search"
+      "search": "Search",
+      "view_more": "View more",
+      "collections": "Collections:",
+      "pages": "Pages:",
+      "articles": "Articles:",
+      "no_results_html": "Your search for \"{{ terms }}\" did not yield any results.",
+      "results_for_html": "Your search for \"{{ terms }}\" revealed the following:",
+      "title": "Search",
+      "placeholder": "Search our store",
+      "submit": "Search",
+      "result_count": {
+        "one": "{{ count }} result",
+        "other": "{{ count }} results"
+      }
     },
     "cart": {
       "view": "View my cart ({{ count }})",
@@ -62,8 +75,10 @@
   },
   "accessibility": {
     "skip_to_text": "Skip to content",
+    "close_modal": "Close (esc)",
     "skip_to_product_info": "Skip to product information",
     "close": "Close",
+    "learn_more": "Learn more",
     "unit_price_separator": "per",
     "vendor": "Vendor:",
     "error": "Error",
