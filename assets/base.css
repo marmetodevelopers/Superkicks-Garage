@@ -2357,10 +2357,10 @@ input[type="checkbox"] {
       "navigation navigation navigation";
   }
 
-  .header:not(.header--middle-left, .header--middle-center)
+  /* .header:not(.header--middle-left, .header--middle-center)
     .header__inline-menu {
     margin-top: 1.05rem;
-  }
+  } */
 }
 
 .header *[tabindex="-1"]:focus {
@@ -3277,4 +3277,7 @@ body.gradient.searchtap .header-wrapper {
 }
 .list-social {
   gap:20px;
+}
+.template-search__header.page-width.center{
+  display:none;
 }

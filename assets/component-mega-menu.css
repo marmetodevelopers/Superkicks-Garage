@@ -124,6 +124,12 @@ header-drawer {
   header-drawer {
     display: none;
   }
+  .header.header--top-center{
+    height:164px;
+  }
+  .header__inline-menu{
+    margin-top:0;
+  }
 }
 
 .menu-drawer-container {
