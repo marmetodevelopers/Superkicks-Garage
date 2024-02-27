@@ -188,6 +188,18 @@
           "settings": {
             "button_link": ""
           }
+        },
+        "store_CBybFR": {
+          "type": "store",
+          "settings": {
+            "button_link": ""
+          }
+        },
+        "store_czRFe8": {
+          "type": "store",
+          "settings": {
+            "button_link": ""
+          }
         }
       },
       "block_order": [
@@ -196,7 +208,9 @@
         "store_BAHrrg",
         "store_zfxWPb",
         "store_zxALVP",
-        "store_erkgBK"
+        "store_erkgBK",
+        "store_CBybFR",
+        "store_czRFe8"
       ],
       "settings": {
         "section_title": "",
