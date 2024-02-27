@@ -318,9 +318,9 @@ details.mega[open] {
   #menu-drawer {
     height: 100dvh;
   }
-  .header-wrapper  {
+  /* .header-wrapper  {
     padding-top:18px;
-  }
+  } */
   .header.header--top-center.header--mobile-center.sticky__header.new-class{
     padding-top:10px;
     padding-bottom:10px;
