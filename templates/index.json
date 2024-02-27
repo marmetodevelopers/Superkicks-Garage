@@ -84,23 +84,18 @@
     "all_brands_9t4irx": {
       "type": "all-brands",
       "blocks": {
+        "brand_n8tVBg": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Nike.jpg",
+            "brand_name": "",
+            "brand_link": ""
+          }
+        },
         "brand_Thae9K": {
           "type": "brand",
           "settings": {
-            "brand_name": "",
-            "brand_link": ""
-          }
-        },
-        "brand_eeXtQM": {
-          "type": "brand",
-          "settings": {
-            "brand_name": "",
-            "brand_link": ""
-          }
-        },
-        "brand_JdMDPD": {
-          "type": "brand",
-          "settings": {
+            "image": "shopify:\/\/shop_images\/Adidas_Originals.jpg",
             "brand_name": "",
             "brand_link": ""
           }
@@ -108,6 +103,15 @@
         "brand_PUrepd": {
           "type": "brand",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Puma_f830039a-6726-4376-8d71-a8bf000c4f9f.jpg",
+            "brand_name": "",
+            "brand_link": ""
+          }
+        },
+        "brand_JdMDPD": {
+          "type": "brand",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Superkicks.jpg",
             "brand_name": "",
             "brand_link": ""
           }
@@ -115,25 +119,27 @@
         "brand_daekc3": {
           "type": "brand",
           "settings": {
+            "image": "shopify:\/\/shop_images\/REEBOK.jpg",
             "brand_name": "",
             "brand_link": ""
           }
         },
-        "brand_n8tVBg": {
+        "brand_eeXtQM": {
           "type": "brand",
           "settings": {
+            "image": "shopify:\/\/shop_images\/CROCS.jpg",
             "brand_name": "",
             "brand_link": ""
           }
         }
       },
       "block_order": [
+        "brand_n8tVBg",
         "brand_Thae9K",
-        "brand_eeXtQM",
-        "brand_JdMDPD",
         "brand_PUrepd",
+        "brand_JdMDPD",
         "brand_daekc3",
-        "brand_n8tVBg"
+        "brand_eeXtQM"
       ],
       "settings": {
       }
@@ -179,7 +185,7 @@
       "settings": {
         "section_title": "SHOP BY BRAND",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 0
       }
     }
   },
