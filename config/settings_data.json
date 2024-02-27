@@ -323,8 +323,8 @@
       "main-password-header": {
         "type": "main-password-header",
         "settings": {
-          "logo": "shopify:\/\/shop_images\/Superkicks_Garage_Sale_Logo.png",
-          "logo_max_width": 140,
+          "logo": "shopify:\/\/shop_images\/logo_915a7e6b-a4ca-4443-9b54-2343aeada86e.png",
+          "logo_max_width": 60,
           "color_scheme": "background-1"
         }
       },
