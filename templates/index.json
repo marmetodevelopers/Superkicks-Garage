@@ -141,6 +141,7 @@
         "brand_daekc3",
         "brand_eeXtQM"
       ],
+      "disabled": true,
       "settings": {
       }
     },
@@ -183,7 +184,7 @@
         "store_zfxWPb"
       ],
       "settings": {
-        "section_title": "SHOP BY BRAND",
+        "section_title": "",
         "padding_top": 36,
         "padding_bottom": 0
       }
