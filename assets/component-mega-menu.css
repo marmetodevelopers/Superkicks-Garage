@@ -318,6 +318,9 @@ details.mega[open] {
   #menu-drawer {
     height: 100dvh;
   }
+  .header-wrapper  {
+    padding-top:30px;
+  }
 }
 
 
