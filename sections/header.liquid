@@ -83,7 +83,7 @@ transform: translateZ(10px);
 background: black;
 }
    
-{% if template.name == 'index' %}
+{% if template contains 'index' %}
  .header-wrapper {
 margin-bottom: -316px;
 background: transparent;
@@ -144,7 +144,8 @@ header-menu details:open {
   margin-top:unset;
 }
   .header-wrapper {
-  background:tranparent!important;  
+  background:tranparent!important;
+  padding-top:18px;  
 }
   .header.header--top-center.new-class{
     background:black;
