@@ -30,7 +30,6 @@
         "293412fe-b96c-4c41-a5ab-43cf1511592e": {
           "type": "brand",
           "settings": {
-            "image": "shopify:\/\/shop_images\/BBC_BRAND_LOGO.png",
             "brand_name": "Billionaire Boys Club",
             "brand_link": "shopify:\/\/collections\/billionaire-boys-club-1"
           }
@@ -38,7 +37,6 @@
         "68bf60c2-4f71-4301-abb3-1423e4c35caa": {
           "type": "brand",
           "settings": {
-            "image": "shopify:\/\/shop_images\/LOGOS_FOR_WEBSITE.png",
             "brand_name": "Birkenstock",
             "brand_link": "shopify:\/\/collections\/birkenstock"
           }
@@ -46,7 +44,6 @@
         "e5cfd687-943f-4aa3-bace-852709971e10": {
           "type": "brand",
           "settings": {
-            "image": "shopify:\/\/shop_images\/3_45.jpg",
             "brand_name": "Clarks Originals",
             "brand_link": "shopify:\/\/collections\/clarks-originals"
           }
@@ -54,7 +51,6 @@
         "21f5b221-2c73-4529-a2b2-6a04c6e3e6bb": {
           "type": "brand",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1_73.jpg",
             "brand_name": "Converse",
             "brand_link": "shopify:\/\/collections\/converse"
           }
@@ -62,7 +58,6 @@
         "e86d3cd4-de3b-44eb-9346-cab56afd8db0": {
           "type": "brand",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1_6e576934-ed27-4b5c-8c71-466453763f24.jpg",
             "brand_name": "Crocs",
             "brand_link": "shopify:\/\/collections\/crocs"
           }
@@ -70,7 +65,6 @@
         "20ee85a8-5e47-41d8-bfbc-08846cc67997": {
           "type": "brand",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1_d85ecd60-45ee-418c-bc41-8b5641e1c394.jpg",
             "brand_name": "FDMTL",
             "brand_link": "shopify:\/\/collections\/fdmtl"
           }
@@ -78,7 +72,6 @@
         "18fd901c-6181-46aa-a28c-c629bf23296c": {
           "type": "brand",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1_d16d455f-1451-4e82-b444-1cfda6ee5467.jpg",
             "brand_name": "Fila",
             "brand_link": "shopify:\/\/collections\/fila"
           }
@@ -87,7 +80,6 @@
           "type": "brand",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/GGG_0508fbe2-2397-4eb2-b363-8fe7a5af9652.jpg",
             "brand_name": "Goodness Gracious Goods",
             "brand_link": ""
           }
@@ -95,7 +87,6 @@
         "813f3f9c-f56b-4c06-8ee4-48f161fd54a4": {
           "type": "brand",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1_2b8d3ed2-3add-490d-85f0-54c2c1532b74.jpg",
             "brand_name": "HUF",
             "brand_link": "shopify:\/\/collections\/huf"
           }
@@ -103,7 +94,6 @@
         "0e026b18-b723-4077-b104-cd42211cc72f": {
           "type": "brand",
           "settings": {
-            "image": "shopify:\/\/shop_images\/8_7.jpg",
             "brand_name": "Hypebeast",
             "brand_link": "shopify:\/\/collections\/hypebeast"
           }
@@ -111,7 +101,6 @@
         "02720849-2621-4466-8700-a3e9622d8e07": {
           "type": "brand",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2_10.png",
             "brand_name": "Icecream",
             "brand_link": "shopify:\/\/collections\/icecream"
           }
@@ -127,7 +116,6 @@
         "8a8c0abd-e3b4-4def-a3bf-413e92993d1d": {
           "type": "brand",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1_93.png",
             "brand_name": "LaMJC",
             "brand_link": "shopify:\/\/collections\/lamjc"
           }
@@ -135,7 +123,6 @@
         "7c570dd7-b701-461a-b764-a91433510d79": {
           "type": "brand",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2_1494e5ed-1065-4e73-a1b3-8e45f5e65850.jpg",
             "brand_name": "New Balance",
             "brand_link": "shopify:\/\/collections\/new-balance"
           }
@@ -143,7 +130,6 @@
         "db23b26a-8d84-45f9-88bd-8e505da9d03f": {
           "type": "brand",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2_c3b89e7e-220c-4a50-a68d-27f8f942d7c9.jpg",
             "brand_name": "New Era",
             "brand_link": "shopify:\/\/collections\/new-era"
           }
@@ -175,7 +161,6 @@
         "d9976c00-7d3d-4c27-a52b-7837f950350f": {
           "type": "brand",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1_14bd9839-238a-4a33-8430-02e10d9ccc0c.jpg",
             "brand_name": "Represent",
             "brand_link": "shopify:\/\/collections\/represent"
           }
@@ -183,7 +168,6 @@
         "4ad89b2c-1882-4118-9898-b3bcc549c76b": {
           "type": "brand",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1_8e90b8ec-7b0f-4cae-9285-b308fc71b18c.jpg",
             "brand_name": "Retrosuperfuture",
             "brand_link": "shopify:\/\/collections\/retrosuperfuture"
           }
@@ -191,7 +175,6 @@
         "73fc5d2e-25ed-461c-9248-be49bd8e5877": {
           "type": "brand",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2_53.jpg",
             "brand_name": "Saucony Originals",
             "brand_link": "shopify:\/\/collections\/saucony-originals"
           }
@@ -199,7 +182,6 @@
         "93a2d0ce-fdce-46c5-875f-93e0893bfde3": {
           "type": "brand",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1_8e10507c-0205-4303-9b1a-c7c62297b95d.jpg",
             "brand_name": "Sneaker Freaker",
             "brand_link": "https:\/\/www.superkicks.in\/search?q=Sneaker%20Freaker%20book"
           }
@@ -207,7 +189,6 @@
         "3aa79d1f-91fa-453b-b6d7-4a8b234bd49a": {
           "type": "brand",
           "settings": {
-            "image": "shopify:\/\/shop_images\/sneaker-tab_744905d6-3157-4350-a62f-570bd4c7c8ce.jpg",
             "brand_name": "Sneaker Lab",
             "brand_link": "shopify:\/\/collections\/sneaker-lab"
           }
@@ -215,7 +196,6 @@
         "a4fdd1e6-6806-49d2-a39d-1b3a9a14350a": {
           "type": "brand",
           "settings": {
-            "image": "shopify:\/\/shop_images\/7_9.jpg",
             "brand_name": "Superkicks",
             "brand_link": "shopify:\/\/collections\/superkicks"
           }
@@ -223,7 +203,6 @@
         "5038c476-ebe4-43ca-9a68-a559b81c08a4": {
           "type": "brand",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2_380e8a6c-39e6-4d1b-bcd8-5e9e21527c76.jpg",
             "brand_name": "Super Plastic",
             "brand_link": "shopify:\/\/collections\/superplastic"
           }
@@ -231,7 +210,6 @@
         "6433aef4-d2b6-4e92-9651-7c3eb7552cad": {
           "type": "brand",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1_cbc33ce7-8691-445a-a907-b88f8d5e9821.jpg",
             "brand_name": "Thrasher",
             "brand_link": "shopify:\/\/collections\/thrasher"
           }
@@ -239,7 +217,6 @@
         "d06898ae-be9a-4b76-ba4d-96b954cd390d": {
           "type": "brand",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1_062e52b9-b0d2-49a0-87cb-fe0171dd4aa2.jpg",
             "brand_name": "Toms",
             "brand_link": "shopify:\/\/collections\/toms"
           }
@@ -247,7 +224,6 @@
         "92d8616f-9d16-4b02-a880-2b219be673b8": {
           "type": "brand",
           "settings": {
-            "image": "shopify:\/\/shop_images\/6_13_f7d4b590-1743-4651-a386-b82a17d07fb8.jpg",
             "brand_name": "Vans",
             "brand_link": "shopify:\/\/collections\/vans"
           }
@@ -255,7 +231,6 @@
         "e50f719d-bb2d-4227-81f0-68567f1981c7": {
           "type": "brand",
           "settings": {
-            "image": "shopify:\/\/shop_images\/SUICOKE.jpg",
             "brand_name": "Suicoke",
             "brand_link": "shopify:\/\/collections\/suicoke"
           }
@@ -263,7 +238,6 @@
         "b7784e81-f4b0-4f1c-a0ef-0b97e15342ab": {
           "type": "brand",
           "settings": {
-            "image": "shopify:\/\/shop_images\/3_43.jpg",
             "brand_name": "Wake Your Dreams",
             "brand_link": "shopify:\/\/collections\/wake-your-dreams"
           }
@@ -271,7 +245,6 @@
         "ac404187-c2c2-4f03-b56c-08917ae605b9": {
           "type": "brand",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1_25.png",
             "brand_name": "Y-3",
             "brand_link": "shopify:\/\/collections\/y-3"
           }
@@ -279,7 +252,6 @@
         "0df1e38a-21cf-4dfd-a41c-778c5c4c2f6f": {
           "type": "brand",
           "settings": {
-            "image": "shopify:\/\/shop_images\/ylati-2_98deb323-c7cb-47fe-9b09-87c4c8976324.jpg",
             "brand_name": "Ylati",
             "brand_link": "shopify:\/\/collections\/ylati"
           }
