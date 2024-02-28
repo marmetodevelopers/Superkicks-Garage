@@ -1,0 +1,7 @@
+name: CI
+on: pull_request
+
+jobs:
+  main:
+    uses: marmetodevelopers/workflows/.github/workflows/main.yml@main
+    secrets: inherit
