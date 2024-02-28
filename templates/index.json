@@ -151,41 +151,42 @@
         "store_geC4Rt": {
           "type": "store",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2_020a38bd-5f3c-43ec-858a-c0a54069bf30.jpg",
+            "image": "shopify:\/\/shop_images\/JORDAN.jpg",
             "button_link": ""
           }
         },
         "store_U4VgeR": {
           "type": "store",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2_0948d4e2-151a-4dca-bd53-7340aeeeaca8.jpg",
+            "image": "shopify:\/\/shop_images\/na.jpg",
             "button_link": ""
           }
         },
         "store_BAHrrg": {
           "type": "store",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2_2f16ad7f-d8d3-41df-a9f6-5b98bfcc59d0.jpg",
+            "image": "shopify:\/\/shop_images\/puma_a551184a-2de4-4d1b-9eeb-faa2865fcd1d.jpg",
             "button_link": ""
           }
         },
         "store_zfxWPb": {
           "type": "store",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4_d8220c8e-2a18-43c7-b15b-0d4136f1592e.jpg",
+            "image": "shopify:\/\/shop_images\/ADIDAS.jpg",
             "button_link": ""
           }
         },
         "store_zxALVP": {
           "type": "store",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1_4acdcad8-2397-4748-9b21-7d3ff29f69aa.jpg",
+            "image": "shopify:\/\/shop_images\/ASICS.jpg",
             "button_link": ""
           }
         },
         "store_erkgBK": {
           "type": "store",
           "settings": {
+            "image": "shopify:\/\/shop_images\/converse.jpg",
             "button_link": ""
           }
         },
