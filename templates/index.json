@@ -193,12 +193,14 @@
         "store_CBybFR": {
           "type": "store",
           "settings": {
+            "image": "shopify:\/\/shop_images\/crocs_aad6152f-580c-46ba-b15a-b3d618e64402.jpg",
             "button_link": ""
           }
         },
         "store_czRFe8": {
           "type": "store",
           "settings": {
+            "image": "shopify:\/\/shop_images\/sk.jpg",
             "button_link": ""
           }
         }
