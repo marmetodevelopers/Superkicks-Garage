@@ -182,7 +182,7 @@
           "type": "store",
           "settings": {
             "image": "shopify:\/\/shop_images\/ASICS.jpg",
-            "button_link": ""
+            "button_link": "shopify:\/\/collections\/asics"
           }
         },
         "store_erkgBK": {
