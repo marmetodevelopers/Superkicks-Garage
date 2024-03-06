@@ -151,6 +151,7 @@
       "blocks": {
         "store_geC4Rt": {
           "type": "store",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/JORDAN_1.jpg",
             "button_link": ""
@@ -160,21 +161,21 @@
           "type": "store",
           "settings": {
             "image": "shopify:\/\/shop_images\/na.jpg",
-            "button_link": ""
+            "button_link": "shopify:\/\/collections\/new-balance"
           }
         },
         "store_BAHrrg": {
           "type": "store",
           "settings": {
             "image": "shopify:\/\/shop_images\/puma_a551184a-2de4-4d1b-9eeb-faa2865fcd1d.jpg",
-            "button_link": ""
+            "button_link": "shopify:\/\/collections\/puma"
           }
         },
         "store_zfxWPb": {
           "type": "store",
           "settings": {
             "image": "shopify:\/\/shop_images\/ADIDAS.jpg",
-            "button_link": ""
+            "button_link": "shopify:\/\/collections\/adidas"
           }
         },
         "store_zxALVP": {
