@@ -27,13 +27,6 @@
             "brand_link": "shopify:\/\/collections\/asics"
           }
         },
-        "293412fe-b96c-4c41-a5ab-43cf1511592e": {
-          "type": "brand",
-          "settings": {
-            "brand_name": "Billionaire Boys Club",
-            "brand_link": "shopify:\/\/collections\/billionaire-boys-club-1"
-          }
-        },
         "68bf60c2-4f71-4301-abb3-1423e4c35caa": {
           "type": "brand",
           "settings": {
@@ -260,7 +253,6 @@
       "block_order": [
         "38c116c1-ed65-49e7-83e6-2fe24a567632",
         "191cfd71-edaa-46a8-9981-1e4ed9617f9c",
-        "293412fe-b96c-4c41-a5ab-43cf1511592e",
         "68bf60c2-4f71-4301-abb3-1423e4c35caa",
         "e5cfd687-943f-4aa3-bace-852709971e10",
         "21f5b221-2c73-4529-a2b2-6a04c6e3e6bb",
