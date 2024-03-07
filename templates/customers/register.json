@@ -1,14 +1,22 @@
 {
   "sections": {
-    "main": {
-      "type": "main-register",
+    "advanced_registration": {
+      "type": "apps",
+      "blocks": {
+        "advanced_registration": {
+          "type": "shopify:\/\/apps\/advanced-registration\/blocks\/advanced-registration\/a64c4b10-b618-4bd2-915b-dbb6662c9253",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "advanced_registration"
+      ],
       "settings": {
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     }
   },
   "order": [
-    "main"
+    "advanced_registration"
   ]
 }
