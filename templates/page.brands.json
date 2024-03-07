@@ -41,68 +41,11 @@
             "brand_link": "shopify:\/\/collections\/birkenstock"
           }
         },
-        "e5cfd687-943f-4aa3-bace-852709971e10": {
-          "type": "brand",
-          "settings": {
-            "brand_name": "Clarks Originals",
-            "brand_link": "shopify:\/\/collections\/clarks-originals"
-          }
-        },
-        "21f5b221-2c73-4529-a2b2-6a04c6e3e6bb": {
-          "type": "brand",
-          "settings": {
-            "brand_name": "Converse",
-            "brand_link": "shopify:\/\/collections\/converse"
-          }
-        },
         "e86d3cd4-de3b-44eb-9346-cab56afd8db0": {
           "type": "brand",
           "settings": {
             "brand_name": "Crocs",
             "brand_link": "shopify:\/\/collections\/crocs"
-          }
-        },
-        "20ee85a8-5e47-41d8-bfbc-08846cc67997": {
-          "type": "brand",
-          "settings": {
-            "brand_name": "FDMTL",
-            "brand_link": "shopify:\/\/collections\/fdmtl"
-          }
-        },
-        "18fd901c-6181-46aa-a28c-c629bf23296c": {
-          "type": "brand",
-          "settings": {
-            "brand_name": "Fila",
-            "brand_link": "shopify:\/\/collections\/fila"
-          }
-        },
-        "54204e85-db14-43e9-ab7c-654416a3db93": {
-          "type": "brand",
-          "disabled": true,
-          "settings": {
-            "brand_name": "Goodness Gracious Goods",
-            "brand_link": ""
-          }
-        },
-        "813f3f9c-f56b-4c06-8ee4-48f161fd54a4": {
-          "type": "brand",
-          "settings": {
-            "brand_name": "HUF",
-            "brand_link": "shopify:\/\/collections\/huf"
-          }
-        },
-        "0e026b18-b723-4077-b104-cd42211cc72f": {
-          "type": "brand",
-          "settings": {
-            "brand_name": "Hypebeast",
-            "brand_link": "shopify:\/\/collections\/hypebeast"
-          }
-        },
-        "02720849-2621-4466-8700-a3e9622d8e07": {
-          "type": "brand",
-          "settings": {
-            "brand_name": "Icecream",
-            "brand_link": "shopify:\/\/collections\/icecream"
           }
         },
         "7ee0ee3c-9c3c-4fe9-b7de-79e142398f4a": {
@@ -118,20 +61,6 @@
           "settings": {
             "brand_name": "LaMJC",
             "brand_link": "shopify:\/\/collections\/lamjc"
-          }
-        },
-        "7c570dd7-b701-461a-b764-a91433510d79": {
-          "type": "brand",
-          "settings": {
-            "brand_name": "New Balance",
-            "brand_link": "shopify:\/\/collections\/new-balance"
-          }
-        },
-        "db23b26a-8d84-45f9-88bd-8e505da9d03f": {
-          "type": "brand",
-          "settings": {
-            "brand_name": "New Era",
-            "brand_link": "shopify:\/\/collections\/new-era"
           }
         },
         "6626a9cb-e5f2-4e32-8fd6-a2698dfa786c": {
@@ -164,97 +93,6 @@
             "brand_name": "Represent",
             "brand_link": "shopify:\/\/collections\/represent"
           }
-        },
-        "4ad89b2c-1882-4118-9898-b3bcc549c76b": {
-          "type": "brand",
-          "settings": {
-            "brand_name": "Retrosuperfuture",
-            "brand_link": "shopify:\/\/collections\/retrosuperfuture"
-          }
-        },
-        "73fc5d2e-25ed-461c-9248-be49bd8e5877": {
-          "type": "brand",
-          "settings": {
-            "brand_name": "Saucony Originals",
-            "brand_link": "shopify:\/\/collections\/saucony-originals"
-          }
-        },
-        "93a2d0ce-fdce-46c5-875f-93e0893bfde3": {
-          "type": "brand",
-          "settings": {
-            "brand_name": "Sneaker Freaker",
-            "brand_link": "https:\/\/www.superkicks.in\/search?q=Sneaker%20Freaker%20book"
-          }
-        },
-        "3aa79d1f-91fa-453b-b6d7-4a8b234bd49a": {
-          "type": "brand",
-          "settings": {
-            "brand_name": "Sneaker Lab",
-            "brand_link": "shopify:\/\/collections\/sneaker-lab"
-          }
-        },
-        "a4fdd1e6-6806-49d2-a39d-1b3a9a14350a": {
-          "type": "brand",
-          "settings": {
-            "brand_name": "Superkicks",
-            "brand_link": "shopify:\/\/collections\/superkicks"
-          }
-        },
-        "5038c476-ebe4-43ca-9a68-a559b81c08a4": {
-          "type": "brand",
-          "settings": {
-            "brand_name": "Super Plastic",
-            "brand_link": "shopify:\/\/collections\/superplastic"
-          }
-        },
-        "6433aef4-d2b6-4e92-9651-7c3eb7552cad": {
-          "type": "brand",
-          "settings": {
-            "brand_name": "Thrasher",
-            "brand_link": "shopify:\/\/collections\/thrasher"
-          }
-        },
-        "d06898ae-be9a-4b76-ba4d-96b954cd390d": {
-          "type": "brand",
-          "settings": {
-            "brand_name": "Toms",
-            "brand_link": "shopify:\/\/collections\/toms"
-          }
-        },
-        "92d8616f-9d16-4b02-a880-2b219be673b8": {
-          "type": "brand",
-          "settings": {
-            "brand_name": "Vans",
-            "brand_link": "shopify:\/\/collections\/vans"
-          }
-        },
-        "e50f719d-bb2d-4227-81f0-68567f1981c7": {
-          "type": "brand",
-          "settings": {
-            "brand_name": "Suicoke",
-            "brand_link": "shopify:\/\/collections\/suicoke"
-          }
-        },
-        "b7784e81-f4b0-4f1c-a0ef-0b97e15342ab": {
-          "type": "brand",
-          "settings": {
-            "brand_name": "Wake Your Dreams",
-            "brand_link": "shopify:\/\/collections\/wake-your-dreams"
-          }
-        },
-        "ac404187-c2c2-4f03-b56c-08917ae605b9": {
-          "type": "brand",
-          "settings": {
-            "brand_name": "Y-3",
-            "brand_link": "shopify:\/\/collections\/y-3"
-          }
-        },
-        "0df1e38a-21cf-4dfd-a41c-778c5c4c2f6f": {
-          "type": "brand",
-          "settings": {
-            "brand_name": "Ylati",
-            "brand_link": "shopify:\/\/collections\/ylati"
-          }
         }
       },
       "block_order": [
@@ -262,36 +100,13 @@
         "191cfd71-edaa-46a8-9981-1e4ed9617f9c",
         "293412fe-b96c-4c41-a5ab-43cf1511592e",
         "68bf60c2-4f71-4301-abb3-1423e4c35caa",
-        "e5cfd687-943f-4aa3-bace-852709971e10",
-        "21f5b221-2c73-4529-a2b2-6a04c6e3e6bb",
         "e86d3cd4-de3b-44eb-9346-cab56afd8db0",
-        "20ee85a8-5e47-41d8-bfbc-08846cc67997",
-        "18fd901c-6181-46aa-a28c-c629bf23296c",
-        "54204e85-db14-43e9-ab7c-654416a3db93",
-        "813f3f9c-f56b-4c06-8ee4-48f161fd54a4",
-        "0e026b18-b723-4077-b104-cd42211cc72f",
-        "02720849-2621-4466-8700-a3e9622d8e07",
         "7ee0ee3c-9c3c-4fe9-b7de-79e142398f4a",
         "8a8c0abd-e3b4-4def-a3bf-413e92993d1d",
-        "7c570dd7-b701-461a-b764-a91433510d79",
-        "db23b26a-8d84-45f9-88bd-8e505da9d03f",
         "6626a9cb-e5f2-4e32-8fd6-a2698dfa786c",
         "e1eeb05d-2cb5-4ce2-acc6-94a79ffecfeb",
         "eb3837d3-2ed4-458e-96e7-ecb2470c5dc3",
-        "d9976c00-7d3d-4c27-a52b-7837f950350f",
-        "4ad89b2c-1882-4118-9898-b3bcc549c76b",
-        "73fc5d2e-25ed-461c-9248-be49bd8e5877",
-        "93a2d0ce-fdce-46c5-875f-93e0893bfde3",
-        "3aa79d1f-91fa-453b-b6d7-4a8b234bd49a",
-        "a4fdd1e6-6806-49d2-a39d-1b3a9a14350a",
-        "5038c476-ebe4-43ca-9a68-a559b81c08a4",
-        "6433aef4-d2b6-4e92-9651-7c3eb7552cad",
-        "d06898ae-be9a-4b76-ba4d-96b954cd390d",
-        "92d8616f-9d16-4b02-a880-2b219be673b8",
-        "e50f719d-bb2d-4227-81f0-68567f1981c7",
-        "b7784e81-f4b0-4f1c-a0ef-0b97e15342ab",
-        "ac404187-c2c2-4f03-b56c-08917ae605b9",
-        "0df1e38a-21cf-4dfd-a41c-778c5c4c2f6f"
+        "d9976c00-7d3d-4c27-a52b-7837f950350f"
       ],
       "settings": {
       }
