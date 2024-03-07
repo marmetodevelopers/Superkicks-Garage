@@ -58,34 +58,26 @@
         "78e3bc0b-4a5a-4ebf-9634-436d36e0b6f9": {
           "type": "slider-image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/5.jpg"
+            "image": "shopify:\/\/shop_images\/Mumbai_1.jpg"
           }
         },
         "92436036-5a3e-48b6-82c0-51e81f2e5636": {
           "type": "slider-image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4.jpg"
+            "image": "shopify:\/\/shop_images\/Mumbai_2.jpg"
           }
         },
         "ad530acf-d20f-44fa-9562-ed60e1191c1b": {
           "type": "slider-image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2.jpg"
-          }
-        },
-        "259b443b-eac2-4632-afd8-fa8591bfe36e": {
-          "type": "slider-image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_260.png"
+            "image": "shopify:\/\/shop_images\/Mumbai_3.jpg"
           }
         }
       },
       "block_order": [
         "78e3bc0b-4a5a-4ebf-9634-436d36e0b6f9",
         "92436036-5a3e-48b6-82c0-51e81f2e5636",
-        "ad530acf-d20f-44fa-9562-ed60e1191c1b",
-        "259b443b-eac2-4632-afd8-fa8591bfe36e"
+        "ad530acf-d20f-44fa-9562-ed60e1191c1b"
       ],
       "settings": {
         "section_id": "Mumbai",
@@ -94,8 +86,6 @@
         "phone_number": "<p>+91 8097811422<\/p>",
         "email_id": "<p>info@superkicks.in<\/p>",
         "opening_hours": "<p><span style=\"text-decoration:underline\"><strong>Opening hours:<\/strong><\/span><\/p><p>10:00 AM – 10:00 PM <\/p><p>Open all days<\/p>",
-        "map_image": "shopify:\/\/shop_images\/Mask_Group_40.png",
-        "map_image2": "shopify:\/\/shop_images\/Mask_Group_67.png",
         "map_link": "https:\/\/goo.gl\/maps\/5znV1ycrj6xYCUsQA",
         "padding_top": 60,
         "padding_bottom": 60
@@ -107,31 +97,31 @@
         "11a1eb78-2c8f-4da6-a20c-2b42aaf223e9": {
           "type": "slider-image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/6.jpg"
+            "image": "shopify:\/\/shop_images\/Delhi_1.jpg"
           }
         },
         "22dd187e-c128-46e8-b87c-88e65f30b603": {
           "type": "slider-image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/85e729a95ec2c968157fbc4a585e1c62.jpg"
+            "image": "shopify:\/\/shop_images\/Delhi_2.jpg"
           }
         },
         "700b57a7-2259-466d-8108-32fc80086c44": {
           "type": "slider-image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/5_a7f669f3-5979-4ab5-8069-53c1d58a3ffc.jpg"
+            "image": "shopify:\/\/shop_images\/Delhi_3.jpg"
           }
         },
         "3cb68dbf-1865-4d1b-9f47-c73fd267f61d": {
           "type": "slider-image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4_18c8f69b-1951-4cde-b771-4311918e3ca5.jpg"
+            "image": "shopify:\/\/shop_images\/Delhi_4.jpg"
           }
         },
         "89f2804f-d30b-42b4-9012-779476eab1bf": {
           "type": "slider-image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2_208e5d1f-80eb-438e-b3d3-efb27b7188dd.jpg"
+            "image": "shopify:\/\/shop_images\/Delhi_5.jpg"
           }
         }
       },
@@ -149,8 +139,6 @@
         "phone_number": "<p>+91 99873 93520<\/p>",
         "email_id": "<p>info@superkicks.in<\/p>",
         "opening_hours": "<p><span style=\"text-decoration:underline\"><strong>Opening hours:<\/strong><\/span><\/p><p>11:00 AM – 08:00 PM<br\/>Open all days<\/p>",
-        "map_image": "shopify:\/\/shop_images\/Mask_Group_40.png",
-        "map_image2": "shopify:\/\/shop_images\/Mask_Group_67.png",
         "map_link": "https:\/\/goo.gl\/maps\/7C7Q5fZcpSkAopoD6",
         "padding_top": 60,
         "padding_bottom": 60
@@ -162,31 +150,31 @@
         "714ebbc1-f92b-4b6f-919f-0b8a1890d2d6": {
           "type": "slider-image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2_247c12de-8f78-463f-a411-cfbc94c4ee1c.jpg"
+            "image": "shopify:\/\/shop_images\/Hyderabad_1.jpg"
           }
         },
         "850670f9-81fe-41c1-b80b-2b4977ccf9cb": {
           "type": "slider-image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/3_3fe82bb4-0e10-46ba-a8a6-54cc66083a8f.jpg"
+            "image": "shopify:\/\/shop_images\/Hyderabad_2.jpg"
           }
         },
         "c55ed440-dd16-4dee-ad82-c4a2236ef886": {
           "type": "slider-image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/53.jpg"
+            "image": "shopify:\/\/shop_images\/Hyderabad_3.jpg"
           }
         },
         "668efb0a-e015-428f-8164-152e8adc3823": {
           "type": "slider-image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4_79fd91d3-d3be-40c1-a845-b5026a5d2f5a.jpg"
+            "image": "shopify:\/\/shop_images\/Hyderabad_4.jpg"
           }
         },
         "8438d1ed-535d-4a03-a40e-5634552a49a7": {
           "type": "slider-image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1_1ae8202c-4809-4ce9-ab31-27885f7556b9.jpg"
+            "image": "shopify:\/\/shop_images\/Hyderabad_5.jpg"
           }
         }
       },
@@ -204,8 +192,6 @@
         "phone_number": "<p>+‎91 99873 63520<\/p>",
         "email_id": "<p>info@superkicks.in<\/p>",
         "opening_hours": "<p><span style=\"text-decoration:underline\"><strong>Opening hours:<\/strong><\/span><\/p><p>11:00 AM – 08:00 PM<br\/>Open all days<\/p>",
-        "map_image": "shopify:\/\/shop_images\/Mask_Group_40.png",
-        "map_image2": "shopify:\/\/shop_images\/Mask_Group_67.png",
         "map_link": "https:\/\/goo.gl\/maps\/sWoyX9RywctgeCVGA",
         "padding_top": 60,
         "padding_bottom": 20
@@ -217,26 +203,26 @@
         "d4641815-a6b7-4894-b787-82fbcb1148bb": {
           "type": "slider-image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4_44.jpg"
+            "image": "shopify:\/\/shop_images\/Bengaluru_1.jpg"
+          }
+        },
+        "slider_image_8JNkGN": {
+          "type": "slider-image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Bengaluru_2.jpg"
           }
         },
         "07b42278-84ea-421f-bab8-58c2e21116e5": {
           "type": "slider-image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/3_46.jpg"
-          }
-        },
-        "47c1f5d4-1bc3-489c-95b5-ac2d519b339e": {
-          "type": "slider-image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/5_22.jpg"
+            "image": "shopify:\/\/shop_images\/Bengaluru_3.jpg"
           }
         }
       },
       "block_order": [
         "d4641815-a6b7-4894-b787-82fbcb1148bb",
-        "07b42278-84ea-421f-bab8-58c2e21116e5",
-        "47c1f5d4-1bc3-489c-95b5-ac2d519b339e"
+        "slider_image_8JNkGN",
+        "07b42278-84ea-421f-bab8-58c2e21116e5"
       ],
       "settings": {
         "section_id": "Bengaluru",
