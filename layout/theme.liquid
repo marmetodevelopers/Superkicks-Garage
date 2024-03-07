@@ -1,91 +1,5 @@
  
-      {% unless request.path contains '/account' %} {% assign restrict_page = true %} {% endunless %} 
-      {% if shop.metafields.adv_reg.noFraming == 'on' %} {% assign restrict_page = true %}{% endif %}
-      {% if shop.metafields.adv_reg.useBlacklist == 'on' %}
-        {% assign restrict_page = false %} 
-        {% assign blockPages = shop.metafields.adv_reg.blockPageUrls | split: "|" %}
-          {% for url in blockPages %}
-            {% if request.path == url %}{% assign restrict_page = true %} {% endif %}
-          {% endfor %}   
-      {% else %}
-          {% assign exceptionUrls = shop.metafields.adv_reg.lockShopExceptionUrls | split: "|" %}
-          {% for url in exceptionUrls %}
-            {% if request.path == url %}{% assign restrict_page = false %} {% endif %}
-          {% endfor %}            
-      {% endif %}    
-      <!-- using block list: {{shop.metafields.adv_reg.useBlacklist}} -->
-      <!-- current request path:{{request.path}} -->
-      <!-- shop lock exceptions:{{shop.metafields.adv_reg.lockShopExceptionUrls }} -->
-      <!--restricting page: {{restrict_page}} -->
-      <!--shop locking: {{shop.metafields.adv_reg.lockShop}} -->
-      {% if request.path == '/challenge' %} {% assign restrict_page = false %} {% endif %}
-      {% if request.path == '/password' %} {% assign restrict_page = false %} {% endif %}
-      {% if request.path == '/account/recover' %} {% assign restrict_page = false %} {% endif %}
-      {% liquid 
-        assign is_allowed = true
-        assign required_tag = shop.metafields.adv_reg.lockRequireTagged 
-        if required_tag
-            assign is_allowed = false
-            if customer
-                for tag in customer.tags
-                    if tag == required_tag
-                        assign is_allowed = true
-                    endif
-                endfor
-            endif
-        endif
-        if is_allowed 
-            assign require_not_tag = shop.metafields.adv_reg.lockRequireNotTagged 
-             if require_not_tag
-                if customer
-                    for tag in customer.tags
-                        if tag == require_not_tag
-                            assign is_allowed = false
-                        endif
-                    endfor
-                endif
-            endif
-        endif
-        if customer == nil or is_allowed == false
-          assign customer_fail = true
-        endif
-        %} 
-        
-      {% if request.path contains '/tools/emails' %} {% assign restrict_page = false %} {% endif %}
-
-      {% if request.path contains '/account/reset' %} {% assign restrict_page = false %} {% endif %}
-      {% if request.path contains '/account/activate' %} {% assign restrict_page = false %} {% endif %}
-
-    {% if request.path contains '/reset-password' %} {% assign restrict_page = false %} {% endif %}
-     {% if request.path contains '/customer-account-password-reset' %} {% assign restrict_page = false %} {% endif %}
-    
-        
-      {% if shop.metafields.adv_reg.lockShop == 'on' and restrict_page and request.design_mode == false and  customer_fail %}
-        <!-- lock on -->
-
-            {% if shop.metafields.adv_reg.noFraming == 'on' %}
-                {% include 'advanced_registration_locked_page' %}
-            {% else %}
-            <!DOCTYPE html>
-<head>     
-
-<title>{{page_title}}</title>
-<meta name="title" content="{{ page_title | escape }}"> 
-{% if page_description %}
-  <meta name="description" content="{{ page_description | escape }}">
-{% endif %}
-<script>
-const returnUrl = encodeURIComponent(window.location.pathname + window.location.search);
-{% if shop.metafields.adv_reg.showRegistrationPageFirst == 'on' %}
-window.location = '/account/register?checkout_url='+returnUrl;
-{% else %}
-window.location = '/account/login?checkout_url='+returnUrl;
-{% endif %}
-</script>
-
-</head> 
-            {% endif %}
-      {% else %} 
+       
       <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}">
   <head>
@@ -528,4 +442,4 @@ FreshMarketerSourceMap.shopName = "{{ shop.name }}"</script>
 
     
   </body>
-</html>{% endif %}
+</html>
