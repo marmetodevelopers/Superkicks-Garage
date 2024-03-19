@@ -151,9 +151,8 @@
         "blocks": {
           "announcement-bar-0": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "text": "Billionaire Boys Club",
+              "text": "NOTE: This Sale is for Superkcks Internal Team",
               "text_alignment": "center",
               "color_scheme": "accent-1",
               "link": "shopify:\/\/collections\/billionaire-boys-club"
