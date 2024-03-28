@@ -94,7 +94,7 @@ padding-top:18px!important;
   width:100%;
 }
  .header__heading {
-  margin-top:15px;
+  margin-top:40px;
 } 
   .header-wrapper {
     margin-bottom: -316px;
@@ -328,7 +328,16 @@ header-menu details:open {
         </details>
       </header-drawer>
     {%- endif -%}
-    
+
+       <div class="social-share">
+  <div class="list__item">
+    {%- if settings.social_facebook_link != blank -%}
+      <a href="{{ settings.social_facebook_link }}" class="link list-social__link">
+          {%- render 'icon-facebook' -%}
+          <span class="visually-hidden">{{ 'general.social.links.facebook' | t }}</span>
+        </a>
+    {%- endif -%}
+  </div>
   <div class="list__item">
     {%- if settings.social_instagram_link != blank -%}
    
