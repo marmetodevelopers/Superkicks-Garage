@@ -328,8 +328,8 @@ header-menu details:open {
         </details>
       </header-drawer>
     {%- endif -%}
-
-       <div class="social-share">
+    {% comment %}
+ <div class="social-share">
   <div class="list__item">
     {%- if settings.social_facebook_link != blank -%}
       <a href="{{ settings.social_facebook_link }}" class="link list-social__link">
@@ -338,6 +338,7 @@ header-menu details:open {
         </a>
     {%- endif -%}
   </div>
+  {% endcomment %}
   <div class="list__item">
     {%- if settings.social_instagram_link != blank -%}
    
