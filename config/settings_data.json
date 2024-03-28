@@ -254,7 +254,7 @@
           "menu": "main-menu",
           "menu_type_desktop": "mega",
           "show_line_separator": false,
-          "enable_sticky_header": true,
+          "enable_sticky_header": false,
           "mobile_logo_position": "center",
           "margin_bottom": 0,
           "padding_top": 0,
