@@ -2435,9 +2435,6 @@ input[type="checkbox"] {
     justify-self: center;
     text-align: center;
   }
-  .header__heading {
-      padding-top: 26px;
-    }
 }
 
 /* Header icons */
