@@ -2249,7 +2249,7 @@ input[type="checkbox"] {
 
 /* section-announcement-bar */
 #shopify-section-announcement-bar {
-  z-index: 3;
+  z-index: 999;
 }
 
 .announcement-bar {
@@ -3280,4 +3280,18 @@ body.gradient.searchtap .header-wrapper {
 }
 .template-search__header.page-width.center{
   display:none;
+}
+
+/*========== announcement-bar css  =======*/
+
+.sticky__announcement {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 999999;
+}
+
+.announcement-bar__message {
+  font-size: calc(13px + (16 - 13) * (100vw - 375px) / (1440 - 375));
 }

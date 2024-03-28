@@ -292,12 +292,22 @@ details.mega[open] {
 .header.header--top-center.header--mobile-center.header--has-menu.new-class.transition-effect {
   transform: translateZ(0);
 }
+
+.header-top_spacing {
+  padding: 0 40px;
+  margin-top: 40px;
+}
+
+.header-top_spacing.sticky__header {
+  margin-top: unset;
+}
+
 .sticky__header {
   width: 100%;
   position: fixed;
   left: 0;
   right: 0;
-  top: 0;
+  top: 40px;
   z-index: 20;
   transform: translate3d(0,-100%,0);
   transition: none;
